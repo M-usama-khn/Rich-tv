@@ -1,0 +1,369 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Rich TV</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" as="font">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700&amp;display=swap" rel="stylesheet"
+        as="font">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="./assets/CSS/slick.css">
+    <link rel="stylesheet" href="./assets/CSS/slick-theme.css">
+    <link rel="stylesheet" href="./assets/CSS/style.css">
+</head>
+
+<body>
+
+    <section class="container-fluid mt-3">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-8">
+                    <div class="mb-5">
+                        <h1 class="fs-1 fw-bold">Earnings Calendar</h1>
+                    </div>
+                    <div class="d-flex border-bottom">
+                        <a href="./economic-calender.html" class="text-black fw-6 pe-3 pb-3">Economic Calender</a>
+                        <a href="./earning-calender.html"
+                            class="clr-primary border-bottom border-primary border-2 fw-6 px-3 pb-3">Earnings
+                            Calendar</a>
+                    </div>
+                </div>
+                <div class="col-lg-4">
+                    <div class="trendingvideos-widget mb-3 shadow-sm rounded border-top border-2 border-warning">
+                        <div class=" border-bottom">
+                            <h2 class="fs-18 fw-6 px-2 text-uppercase">TOP 10 GAINER OF THE MONTH</h2>
+                        </div>
+                        <div class="stock-table-data position-relative px-2 overflow-auto"
+                            style="height: 400px !important;">
+                            <div class="table-responsive" style="height: 400px !important;">
+                                <div class="overlay-home-ajax" style="display: none;"></div>
+                                <table class="table stock-market-table1">
+                                    <thead>
+                                        <tr>
+                                            <th scope="col"
+                                                class="sticky-side position-sticky bg-white text-black px-1 py-2">
+                                                Name</th>
+
+                                            <th scope="col" class="text-black px-1 py-2">Last</th>
+                                            <th scope="col" class="text-black px-1 py-2">Chg</th>
+                                            <th scope="col" class="text-black px-1 py-2">%Chg</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody id="stock-table-body">
+                                        <tr id="ROKU">
+                                            <td class="gray p-1 sticky-side position-sticky bg-white pl-0">
+                                                <a href="/stock-quote/ROKU:NMS" class="gray p-1 d-block"
+                                                    aria-label="Stock Quote">
+                                                    <span class="d-block fw-bolder text-color text-color">Roku,
+                                                        Inc.</span>
+                                                </a>
+                                            </td>
+                                            <td class="gray p-1" id="symbol-price">$62.1</td>
+                                            <td class="Green p-1" id="price-change" data-last-price="62.1">+1.23</td>
+                                            <td class="Green p-1" id="percent-change">+1.98</td>
+
+                                        </tr>
+                                        <tr id="RMLFF">
+                                            <td class="gray p-1 sticky-side position-sticky bg-white pl-0">
+                                                <a href="/stock-quote/RMLFF:PNK" class="gray p-1 d-block"
+                                                    aria-label="Stock Quote">
+                                                    <span class="d-block fw-bolder text-color text-color">RUSORO MINING
+                                                        LTD</span>
+                                                </a>
+                                            </td>
+                                            <td class="gray p-1" id="symbol-price">$0.32</td>
+                                            <td class="Green p-1" id="price-change" data-last-price="0.32">+0.04</td>
+                                            <td class="Green p-1" id="percent-change">+12.50</td>
+
+                                        </tr>
+                                        <tr id="DIS">
+                                            <td class="gray p-1 sticky-side position-sticky bg-white pl-0">
+                                                <a href="/stock-quote/DIS:NYQ" class="gray p-1 d-block"
+                                                    aria-label="Stock Quote">
+                                                    <span class="d-block fw-bolder text-color text-color">Walt Disney
+                                                        Company (The)</span>
+                                                </a>
+                                            </td>
+                                            <td class="gray p-1" id="symbol-price">$84.68</td>
+                                            <td class="Green p-1" id="price-change" data-last-price="84.68">+0.25</td>
+                                            <td class="Green p-1" id="percent-change">+0.29</td>
+
+                                        </tr>
+                                        <tr id="UBER">
+                                            <td class="gray p-1 sticky-side position-sticky bg-white pl-0">
+                                                <a href="/stock-quote/UBER:NYQ" class="gray p-1 d-block"
+                                                    aria-label="Stock Quote">
+                                                    <span class="d-block fw-bolder text-color">Uber Technologies,
+                                                        Inc.</span>
+                                                </a>
+                                            </td>
+                                            <td class="gray p-1" id="symbol-price">$43</td>
+                                            <td class="Green p-1" id="price-change" data-last-price="43">+0.04</td>
+                                            <td class="Green p-1" id="percent-change">+0.11</td>
+
+                                        </tr>
+                                        <tr id="SOFI">
+                                            <td class="gray p-1 sticky-side position-sticky bg-white pl-0">
+                                                <a href="/stock-quote/SOFI:NMS" class="gray p-1 d-block"
+                                                    aria-label="Stock Quote">
+                                                    <span class="d-block fw-bolder text-color text-color">SoFi
+                                                        Technologies,
+                                                        Inc.</span>
+                                                </a>
+                                            </td>
+                                            <td class="gray p-1" id="symbol-price">$7.77</td>
+                                            <td class="Green p-1" id="price-change" data-last-price="7.77">+0.04</td>
+                                            <td class="Green p-1" id="percent-change">+0.64</td>
+
+                                        </tr>
+                                        <tr id="FUBO">
+                                            <td class="gray p-1 sticky-side position-sticky bg-white pl-0">
+                                                <a href="/stock-quote/FUBO:NYQ" class="gray p-1 d-block"
+                                                    aria-label="Stock Quote">
+                                                    <span class="d-block fw-bolder text-color text-color">fuboTV
+                                                        Inc.</span>
+                                                </a>
+                                            </td>
+                                            <td class="gray p-1" id="symbol-price">$2.46</td>
+                                            <td class="Green p-1" id="price-change" data-last-price="2.46">+0.04</td>
+                                            <td class="Green p-1" id="percent-change">+1.82</td>
+
+                                        </tr>
+                                        <tr id="PYPL">
+                                            <td class="gray p-1 sticky-side position-sticky bg-white pl-0">
+                                                <a href="/stock-quote/PYPL:NMS" class="gray p-1 d-block"
+                                                    aria-label="Stock Quote">
+                                                    <span class="d-block fw-bolder text-color text-color">PayPal
+                                                        Holdings,
+                                                        Inc.</span>
+                                                </a>
+                                            </td>
+                                            <td class="gray p-1" id="symbol-price">$55.8</td>
+                                            <td class="Green p-1" id="price-change" data-last-price="55.8">+0.14</td>
+                                            <td class="Green p-1" id="percent-change">+0.25</td>
+
+                                        </tr>
+                                        <tr id="PLTR">
+                                            <td class="gray p-1 sticky-side position-sticky bg-white pl-0">
+                                                <a href="/stock-quote/PLTR:NYQ" class="gray p-1 d-block"
+                                                    aria-label="Stock Quote">
+                                                    <span class="d-block fw-bolder text-color text-color">Palantir
+                                                        Technologies Inc.</span>
+                                                </a>
+                                            </td>
+                                            <td class="gray p-1" id="symbol-price">$17.2</td>
+                                            <td class="Green p-1" id="price-change" data-last-price="17.2">+0.07</td>
+                                            <td class="Green p-1" id="percent-change">+0.43</td>
+
+                                        </tr>
+                                        <tr id="NKLA">
+                                            <td class="gray p-1 sticky-side position-sticky bg-white pl-0">
+                                                <a href="/stock-quote/NKLA:NMS" class="gray p-1 d-block"
+                                                    aria-label="Stock Quote">
+                                                    <span class="d-block fw-bolder text-color text-color">Nikola
+                                                        Corporation</span>
+                                                </a>
+                                            </td>
+                                            <td class="gray p-1" id="symbol-price">$1.035</td>
+                                            <td class="Green p-1" id="price-change" data-last-price="1.035">+0.00</td>
+                                            <td class="Green p-1" id="percent-change">+0.48</td>
+
+                                        </tr>
+                                        <tr id="LGHL">
+                                            <td class="gray p-1 sticky-side position-sticky bg-white pl-0">
+                                                <a href="/stock-quote/LGHL:NCM" class="gray p-1 d-block"
+                                                    aria-label="Stock Quote">
+                                                    <span class="d-block fw-bolder text-color text-color">Lion Group
+                                                        Holding
+                                                        Ltd.</span>
+                                                </a>
+                                            </td>
+                                            <td class="gray p-1" id="symbol-price">$1.05</td>
+                                            <td class="Green p-1" id="price-change" data-last-price="1.05">+0.00</td>
+                                            <td class="Green p-1" id="percent-change">+0.95</td>
+
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+
+                    </div>
+                    <div class="trendingvideos-widget mb-3 shadow-sm rounded border-top border-2 border-warning">
+                        <div class=" border-bottom">
+                            <h2 class="fs-18 fw-6 px-2 text-uppercase">TOP 10 LOSSER OF THE MONTH</h2>
+                        </div>
+                        <div class="stock-table-data position-relative px-2 overflow-auto"
+                            style="height: 400px !important;">
+                            <div class="table-responsive" style="height: 400px !important;">
+                                <div class="overlay-home-ajax" style="display: none;"></div>
+                                <table class="table stock-market-table1">
+                                    <thead>
+                                        <tr>
+                                            <th scope="col"
+                                                class="sticky-side position-sticky bg-white text-black px-1 py-2">
+                                                Name</th>
+
+                                            <th scope="col" class="text-black px-1 py-2">Last</th>
+                                            <th scope="col" class="text-black px-1 py-2">Chg</th>
+                                            <th scope="col" class="text-black px-1 py-2">%Chg</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody id="stock-table-body">
+                                        <tr id="ROKU">
+                                            <td class="gray p-1 sticky-side position-sticky bg-white pl-0">
+                                                <a href="/stock-quote/ROKU:NMS" class="gray p-1 d-block"
+                                                    aria-label="Stock Quote">
+                                                    <span class="d-block fw-bolder text-color text-color">Roku,
+                                                        Inc.</span>
+                                                </a>
+                                            </td>
+                                            <td class="gray p-1" id="symbol-price">$62.1</td>
+                                            <td class="Red p-1" id="price-change" data-last-price="62.1">-1.23</td>
+                                            <td class="Red p-1" id="percent-change">-1.98</td>
+
+                                        </tr>
+                                        <tr id="RMLFF">
+                                            <td class="gray p-1 sticky-side position-sticky bg-white pl-0">
+                                                <a href="/stock-quote/RMLFF:PNK" class="gray p-1 d-block"
+                                                    aria-label="Stock Quote">
+                                                    <span class="d-block fw-bolder text-color text-color">RUSORO MINING
+                                                        LTD</span>
+                                                </a>
+                                            </td>
+                                            <td class="gray p-1" id="symbol-price">$0.32</td>
+                                            <td class="Red p-1" id="price-change" data-last-price="0.32">-0.04</td>
+                                            <td class="Red p-1" id="percent-change">-12.50</td>
+
+                                        </tr>
+                                        <tr id="DIS">
+                                            <td class="gray p-1 sticky-side position-sticky bg-white pl-0">
+                                                <a href="/stock-quote/DIS:NYQ" class="gray p-1 d-block"
+                                                    aria-label="Stock Quote">
+                                                    <span class="d-block fw-bolder text-color text-color">Walt Disney
+                                                        Company (The)</span>
+                                                </a>
+                                            </td>
+                                            <td class="gray p-1" id="symbol-price">$84.68</td>
+                                            <td class="Red p-1" id="price-change" data-last-price="84.68">-0.25</td>
+                                            <td class="Red p-1" id="percent-change">-0.29</td>
+
+                                        </tr>
+                                        <tr id="UBER">
+                                            <td class="gray p-1 sticky-side position-sticky bg-white pl-0">
+                                                <a href="/stock-quote/UBER:NYQ" class="gray p-1 d-block"
+                                                    aria-label="Stock Quote">
+                                                    <span class="d-block fw-bolder text-color">Uber Technologies,
+                                                        Inc.</span>
+                                                </a>
+                                            </td>
+                                            <td class="gray p-1" id="symbol-price">$43</td>
+                                            <td class="Red p-1" id="price-change" data-last-price="43">-0.04</td>
+                                            <td class="Red p-1" id="percent-change">-0.11</td>
+
+                                        </tr>
+                                        <tr id="SOFI">
+                                            <td class="gray p-1 sticky-side position-sticky bg-white pl-0">
+                                                <a href="/stock-quote/SOFI:NMS" class="gray p-1 d-block"
+                                                    aria-label="Stock Quote">
+                                                    <span class="d-block fw-bolder text-color text-color">SoFi
+                                                        Technologies,
+                                                        Inc.</span>
+                                                </a>
+                                            </td>
+                                            <td class="gray p-1" id="symbol-price">$7.77</td>
+                                            <td class="Red p-1" id="price-change" data-last-price="7.77">-0.04</td>
+                                            <td class="Red p-1" id="percent-change">-0.64</td>
+
+                                        </tr>
+                                        <tr id="FUBO">
+                                            <td class="gray p-1 sticky-side position-sticky bg-white pl-0">
+                                                <a href="/stock-quote/FUBO:NYQ" class="gray p-1 d-block"
+                                                    aria-label="Stock Quote">
+                                                    <span class="d-block fw-bolder text-color text-color">fuboTV
+                                                        Inc.</span>
+                                                </a>
+                                            </td>
+                                            <td class="gray p-1" id="symbol-price">$2.46</td>
+                                            <td class="Red p-1" id="price-change" data-last-price="2.46">-0.04</td>
+                                            <td class="Red p-1" id="percent-change">-1.82</td>
+
+                                        </tr>
+                                        <tr id="PYPL">
+                                            <td class="gray p-1 sticky-side position-sticky bg-white pl-0">
+                                                <a href="/stock-quote/PYPL:NMS" class="gray p-1 d-block"
+                                                    aria-label="Stock Quote">
+                                                    <span class="d-block fw-bolder text-color text-color">PayPal
+                                                        Holdings,
+                                                        Inc.</span>
+                                                </a>
+                                            </td>
+                                            <td class="gray p-1" id="symbol-price">$55.8</td>
+                                            <td class="Red p-1" id="price-change" data-last-price="55.8">-0.14</td>
+                                            <td class="Red p-1" id="percent-change">-0.25</td>
+
+                                        </tr>
+                                        <tr id="PLTR">
+                                            <td class="gray p-1 sticky-side position-sticky bg-white pl-0">
+                                                <a href="/stock-quote/PLTR:NYQ" class="gray p-1 d-block"
+                                                    aria-label="Stock Quote">
+                                                    <span class="d-block fw-bolder text-color text-color">Palantir
+                                                        Technologies Inc.</span>
+                                                </a>
+                                            </td>
+                                            <td class="gray p-1" id="symbol-price">$17.2</td>
+                                            <td class="Red p-1" id="price-change" data-last-price="17.2">-0.07</td>
+                                            <td class="Red p-1" id="percent-change">-0.43</td>
+
+                                        </tr>
+                                        <tr id="NKLA">
+                                            <td class="gray p-1 sticky-side position-sticky bg-white pl-0">
+                                                <a href="/stock-quote/NKLA:NMS" class="gray p-1 d-block"
+                                                    aria-label="Stock Quote">
+                                                    <span class="d-block fw-bolder text-color text-color">Nikola
+                                                        Corporation</span>
+                                                </a>
+                                            </td>
+                                            <td class="gray p-1" id="symbol-price">$1.035</td>
+                                            <td class="Red p-1" id="price-change" data-last-price="1.035">-0.00</td>
+                                            <td class="Red p-1" id="percent-change">-0.48</td>
+                                        </tr>
+                                        <tr id="LGHL">
+                                            <td class="gray p-1 sticky-side position-sticky bg-white pl-0">
+                                                <a href="/stock-quote/LGHL:NCM" class="gray p-1 d-block"
+                                                    aria-label="Stock Quote">
+                                                    <span class="d-block fw-bolder text-color text-color">Lion Group
+                                                        Holding
+                                                        Ltd.</span>
+                                                </a>
+                                            </td>
+                                            <td class="gray p-1" id="symbol-price">$1.05</td>
+                                            <td class="Red p-1" id="price-change" data-last-price="1.05">-0.00</td>
+                                            <td class="Red p-1" id="percent-change">-0.95</td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- JS Files -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+        crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"
+        integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+    <script src="./assets/js/slick.min.js"></script>
+    <script src="./assets/js/custom.js"></script>
+</body>
+
+</html>

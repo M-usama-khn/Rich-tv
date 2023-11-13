@@ -1,0 +1,2028 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Rich TV</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" as="font">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700&amp;display=swap" rel="stylesheet"
+    as="font">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+  <link rel="stylesheet" href="./assets/CSS/slick.css">
+  <link rel="stylesheet" href="./assets/CSS/slick-theme.css">
+  <link rel="stylesheet" href="./assets/CSS/style.css">
+</head>
+
+<body>
+
+  <header class="container-fluid position-fixed main-header">
+    <div class="container">
+      <div class="top_header py-3 d-none d-md-block">
+        <div class="row">
+          <div class="col-md-6 top_email-col">
+            <div class="header_email_phone d-flex gap-4">
+              <a href="tel:+778-237-2402" class="d-flex gap-2 text-white hover-primary" aria-label="Phone"><i
+                  class="bi bi-telephone-fill"></i>778-237-2402</a>
+              <a href="mailto:support@richtv.io" class="d-flex gap-2 text-white hover-primary" aria-label="Email"><i
+                  class="bi bi-envelope-fill"></i>support@richtv.io</a>
+            </div>
+          </div>
+          <div class="col-md-6 top_login_col">
+            <div class="header_login d-flex gap-4 justify-content-end">
+              <a href="/welcome" class="d-flex gap-2 text-white hover-primary" aria-label="login"><i
+                  class="bi bi-box-arrow-in-right"></i>Log In</a>
+              <a href="/register" class="d-flex gap-2 text-white hover-primary" aria-label="signup"><i
+                  class="bi bi-person-fill"></i>Sign Up</a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="nav-main">
+        <nav class="navbar  bg-transparent py-3">
+          <div class="container-fluid p-0">
+            <div class="site-logo">
+              <a href="/" title="Rich TV" rel="home" aria-label="Rich Tv logo">
+                <img class="header-image is-logo-image" alt="Rich TV"
+                  src="https://s3.wasabisys.com/rpdapp1/upload/photos/2023/img/logo.svg" title="Rich TV">
+              </a>
+            </div>
+            <button class="navbar-toggler d-block d-xl-none" type="button" data-bs-toggle="offcanvas"
+              data-bs-target="#offcanvasDarkNavbar" aria-controls="offcanvasDarkNavbar">
+              <i class="bi bi-list fs-2 fw-bolder"></i>
+            </button>
+            <div class="dextop-nav d-none d-xl-block">
+              <div class="main-menu-container">
+                <ul class="main-list mb-0">
+                  <li>
+                    <div class="dropdown">
+                      <button class="nav-link dropdown-toggle d-flex" type="button" data-bs-toggle="dropdown"
+                        aria-expanded="false">
+                        FINANCIAL NEWS
+                      </button>
+                      <ul class="dropdown-menu px-4 py-3">
+                        <li><a class="dropdown-item nav-link" href="#">Press Release</a></li>
+                        <li><a class="dropdown-item nav-link" href="#">Market Analysis</a></li>
+                        <li><a class="dropdown-item nav-link" href="#">Investing</a></li>
+                        <li><a class="dropdown-item nav-link" href="#">Stocks</a></li>
+                        <li><a class="dropdown-item nav-link" href="#">Cryptocurrency</a></li>
+                      </ul>
+                    </div>
+                  </li>
+                  <li>
+                    <div class="dropdown">
+                      <button class="nav-link dropdown-toggle d-flex" type="button" data-bs-toggle="dropdown"
+                        aria-expanded="false">
+                        TRADING SCHOOL
+                      </button>
+                      <ul class="dropdown-menu px-4 py-3">
+                        <li><a class="dropdown-item nav-link" href="#">Press Release</a></li>
+                        <li><a class="dropdown-item nav-link" href="#">Market Analysis</a></li>
+                        <li><a class="dropdown-item nav-link" href="#">Investing</a></li>
+                        <li><a class="dropdown-item nav-link" href="#">Stocks</a></li>
+                        <li><a class="dropdown-item nav-link" href="#">Cryptocurrency</a></li>
+                      </ul>
+                    </div>
+                  </li>
+                  <li>
+                    <div class="dropdown">
+                      <button class="nav-link dropdown-toggle d-flex" type="button" data-bs-toggle="dropdown"
+                        aria-expanded="false">
+                        RESOURCES
+                      </button>
+                      <ul class="dropdown-menu px-4 py-3">
+                        <li><a class="dropdown-item nav-link" href="#">Press Release</a></li>
+                        <li><a class="dropdown-item nav-link" href="#">Market Analysis</a></li>
+                        <li><a class="dropdown-item nav-link" href="#">Investing</a></li>
+                        <li><a class="dropdown-item nav-link" href="#">Stocks</a></li>
+                        <li><a class="dropdown-item nav-link" href="#">Cryptocurrency</a></li>
+                      </ul>
+                    </div>
+                  </li>
+                  <li>
+                    <a href="" class="nav-link">CEO INTERVIEWS</a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+            <div class="offcanvas offcanvas-end text-bg-white" tabindex="-1" id="offcanvasDarkNavbar"
+              aria-labelledby="offcanvasDarkNavbarLabel">
+              <div class="offcanvas-header">
+                <div class="site-logo">
+                  <a href="/" title="Rich TV" rel="home" aria-label="Rich Tv logo">
+                    <img class="header-image is-logo-image" alt="Rich TV"
+                      src="https://s3.wasabisys.com/rpdapp1/upload/photos/2023/img/logo.svg" title="Rich TV">
+                  </a>
+                </div>
+                <button type="button" class="btn-close btn-close-black" data-bs-dismiss="offcanvas"
+                  aria-label="Close"></button>
+              </div>
+              <div class="offcanvas-body">
+                <div class="main-menu-container">
+                  <ul class="main-list mb-0 flex-column">
+                    <li>
+                      <div class="dropdown">
+                        <button class="nav-link dropdown-toggle d-flex" type="button" data-bs-toggle="dropdown"
+                          aria-expanded="false">
+                          FINANCIAL NEWS
+                        </button>
+                        <ul class="dropdown-menu px-4 py-3">
+                          <li><a class="dropdown-item nav-link" href="#">Press Release</a></li>
+                          <li><a class="dropdown-item nav-link" href="#">Market Analysis</a></li>
+                          <li><a class="dropdown-item nav-link" href="#">Investing</a></li>
+                          <li><a class="dropdown-item nav-link" href="#">Stocks</a></li>
+                          <li><a class="dropdown-item nav-link" href="#">Cryptocurrency</a></li>
+                        </ul>
+                      </div>
+                    </li>
+                    <li>
+                      <div class="dropdown">
+                        <button class="nav-link dropdown-toggle d-flex" type="button" data-bs-toggle="dropdown"
+                          aria-expanded="false">
+                          TRADING SCHOOL
+                        </button>
+                        <ul class="dropdown-menu px-4 py-3">
+                          <li><a class="dropdown-item nav-link" href="#">Press Release</a></li>
+                          <li><a class="dropdown-item nav-link" href="#">Market Analysis</a></li>
+                          <li><a class="dropdown-item nav-link" href="#">Investing</a></li>
+                          <li><a class="dropdown-item nav-link" href="#">Stocks</a></li>
+                          <li><a class="dropdown-item nav-link" href="#">Cryptocurrency</a></li>
+                        </ul>
+                      </div>
+                    </li>
+                    <li>
+                      <div class="dropdown">
+                        <button class="nav-link dropdown-toggle d-flex" type="button" data-bs-toggle="dropdown"
+                          aria-expanded="false">
+                          RESOURCES
+                        </button>
+                        <ul class="dropdown-menu px-4 py-3">
+                          <li><a class="dropdown-item nav-link" href="#">Press Release</a></li>
+                          <li><a class="dropdown-item nav-link" href="#">Market Analysis</a></li>
+                          <li><a class="dropdown-item nav-link" href="#">Investing</a></li>
+                          <li><a class="dropdown-item nav-link" href="#">Stocks</a></li>
+                          <li><a class="dropdown-item nav-link" href="#">Cryptocurrency</a></li>
+                        </ul>
+                      </div>
+                    </li>
+                    <li>
+                      <a href="" class="nav-link">CEO INTERVIEWS</a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+        </nav>
+      </div>
+    </div>
+  </header>
+  <!-- Hero Section Start  -->
+  <section class="hero-section container-fluid position-relative py-hero">
+    <video src="https://s3.wasabisys.com/rpdapp1/upload/photos/2023/video/hero_bg.m4v" muted="" loop="" autoplay=""
+      class="position-absolute inset-0 w-100 h-100 object-fit-cover"></video>
+    <div class="overlay position-absolute inset-0 w-100 h-100 object-fit-cover bg-black opacity-50"></div>
+    <div class="container position-relative">
+      <div class="row">
+        <div class="col-xl-9 col-lg-12">
+          <div class="row mx-0">
+            <div class="col-12 p-0">
+              <div class="main-heading">
+                <h1 class="text-white display-2 fw-bolder mb-3">NAVIGATE<span class="clr-primary"> MARKETS
+                  </span>TOGETHER!</h1>
+                <p class="mb-5 text-white fs-2 lh-base">CONQUER MARKET LABYRINTHS: SAVVY INSIGHTS &amp; DYNAMIC CHATS.
+                </p>
+              </div>
+            </div>
+          </div>
+          <!-- Form HTML Start -->
+          <div class="hero-foem-wrapper">
+            <form class="hero-form mt-0 mb-5" id="quick-register">
+              <div class="row mb-3">
+                <div class="form-group col-sm-6">
+                  <!-- <label for="user-name" class="text-white">Your Name</label> -->
+                  <input type="text" class="form-control bg-transparent text-white py-3 mb-sm-0 mb-3 border border-1"
+                    name="username" id="username" placeholder="Your Name" fdprocessedid="xhligk">
+                </div>
+                <div class="form-group col-sm-6">
+                  <!-- <label for="user-email" class="text-white">Your Email</label> -->
+                  <input type="text" class="form-control bg-transparent text-white py-3 border border-1" name="email"
+                    id="email" placeholder="Your Email" fdprocessedid="8tpu39">
+                </div>
+              </div>
+              <span style="display:none" class="msg text-white my-2 bg-danger p-2 rounded-1"></span>
+              <div class="submit-form">
+                <button class="btn btn-primary fw-bolder">Sign Up</button>
+              </div>
+            </form>
+            <!-- <button id="quick-signup" >Open Popup</button> -->
+
+          </div>
+          <!-- Form HTML End -->
+        </div>
+        <div class="col-12">
+          <div class="hero-stock-slider">
+            <div class="mx-1">
+              <div class="stock-card" id="">
+                  <a style="min-width:200px" href="/stock-quote/BTC-USD:CCC" class="summary-card active-sm text-white" aria-label="Stock Quote" tabindex="-1">
+                      <div class="market-summary-card">
+                          <div class="card-img">
+                              <div class="d-flex justify-content-between align-items-center g-10">
+                                  <h4 class="d-flex align-items-center gap-2 fs-18">
+                                      <div class="widget-stock-img">
+                                          <img src="https://s3.wasabisys.com/rpdapp1/upload/photos/2023/img/BTC-USD.png" alt="BTC-USD">
+                                      </div>BTC-USD                                                                </h4>
+                                  <span class="text-white d-block text-start fs-14 fw-bold" id="">36702.25</span>
+                              </div>
+                              <div class="stock-details d-flex justify-content-end g-10 fs-14 fw-bold">
+                                  <span id="" class="change-down" data-last-price="36702.25">-645.92</span>
+                                  <span id="" class="change-down ">-1.71</span>
+                              </div>
+                          </div>
+                      </div>
+                  </a>
+              </div>
+            </div>
+            <div class="mx-1">
+              <div class="stock-card" id="BTC-USD">
+                  <a style="min-width:200px" href="/stock-quote/BTC-USD:CCC" class="summary-card active-sm text-white" aria-label="Stock Quote" tabindex="-1">
+                      <div class="market-summary-card">
+                          <div class="card-img">
+                              <div class="d-flex justify-content-between align-items-center g-10">
+                                  <h4 class="d-flex align-items-center gap-2 fs-18">
+                                      <div class="widget-stock-img">
+                                          <img src="https://s3.wasabisys.com/rpdapp1/upload/photos/2023/img/BTC-USD.png" alt="BTC-USD">
+                                      </div>BTC-USD                                                                </h4>
+                                  <span class="text-white d-block text-start fs-14 fw-bold" id="symbol-price">36702.25</span>
+                              </div>
+                              <div class="stock-details d-flex justify-content-end g-10 fs-14 fw-bold">
+                                  <span id="price-change" class="change-up" data-last-price="36702.25">228.73</span>
+                                  <span id="percent-change" class="change-up">0.62</span>
+                              </div>
+                          </div>
+                      </div>
+                  </a>
+              </div>
+            </div>
+          <div class="mx-1">
+            <div class="stock-card" id="">
+                <a style="min-width:200px" href="/stock-quote/AMZN:NMS" class="summary-card active-sm text-white" aria-label="Stock Quote" tabindex="-1">
+                    <div class="market-summary-card">
+                        <div class="card-img">
+                            <div class="d-flex justify-content-between align-items-center g-10">
+                                <h4 class="d-flex align-items-center gap-2 fs-18">
+                                    <div class="widget-stock-img">
+                                        <img src="https://s3.wasabisys.com/rpdapp1/upload/photos/2023/img/AMZN.png" alt="AMZN">
+                                    </div>AMZN                                                                </h4>
+                                <span class="text-white d-block text-start fs-14 fw-bold" id="">142.08</span>
+                            </div>
+                            <div class="stock-details d-flex justify-content-end g-10 fs-14 fw-bold">
+                                <span id="" class="change-down" data-last-price="142.08">-1.48</span>
+                                <span id="" class="change-down">-1.04</span>
+                            </div>
+                        </div>
+                    </div>
+                </a>
+            </div>
+          </div>
+          <div class="mx-1">
+            <div class="stock-card" id="">
+                <a style="min-width:200px" href="/stock-quote/AMZN:NMS" class="summary-card active-sm text-white" aria-label="Stock Quote" tabindex="-1">
+                    <div class="market-summary-card">
+                        <div class="card-img">
+                            <div class="d-flex justify-content-between align-items-center g-10">
+                                <h4 class="d-flex align-items-center gap-2 fs-18">
+                                    <div class="widget-stock-img">
+                                        <img src="https://s3.wasabisys.com/rpdapp1/upload/photos/2023/img/AMZN.png" alt="AMZN">
+                                    </div>AMZN                                                                </h4>
+                                <span class="text-white d-block text-start fs-14 fw-bold" id="">142.08</span>
+                            </div>
+                            <div class="stock-details d-flex justify-content-end g-10 fs-14 fw-bold">
+                                <span id="" class="change-down" data-last-price="142.08">-1.48</span>
+                                <span id="" class="change-down">-1.04</span>
+                            </div>
+                        </div>
+                    </div>
+                </a>
+            </div>
+          </div>
+          <div class="mx-1">
+            <div class="stock-card" id="">
+                <a style="min-width:200px" href="/stock-quote/AMZN:NMS" class="summary-card active-sm text-white" aria-label="Stock Quote" tabindex="-1">
+                    <div class="market-summary-card">
+                        <div class="card-img">
+                            <div class="d-flex justify-content-between align-items-center g-10">
+                                <h4 class="d-flex align-items-center gap-2 fs-18">
+                                    <div class="widget-stock-img">
+                                        <img src="https://s3.wasabisys.com/rpdapp1/upload/photos/2023/img/AMZN.png" alt="AMZN">
+                                    </div>AMZN                                                                </h4>
+                                <span class="text-white d-block text-start fs-14 fw-bold" id="">142.08</span>
+                            </div>
+                            <div class="stock-details d-flex justify-content-end g-10 fs-14 fw-bold">
+                                <span id="" class="change-down" data-last-price="142.08">-1.48</span>
+                                <span id="" class="change-down">-1.04</span>
+                            </div>
+                        </div>
+                    </div>
+                </a>
+            </div>
+          </div>
+          <div class="mx-1">
+            <div class="stock-card" id="">
+                <a style="min-width:200px" href="/stock-quote/AMZN:NMS" class="summary-card active-sm text-white" aria-label="Stock Quote" tabindex="-1">
+                    <div class="market-summary-card">
+                        <div class="card-img">
+                            <div class="d-flex justify-content-between align-items-center g-10">
+                                <h4 class="d-flex align-items-center gap-2 fs-18">
+                                    <div class="widget-stock-img">
+                                        <img src="https://s3.wasabisys.com/rpdapp1/upload/photos/2023/img/AMZN.png" alt="AMZN">
+                                    </div>AMZN                                                                </h4>
+                                <span class="text-white d-block text-start fs-14 fw-bold" id="">142.08</span>
+                            </div>
+                            <div class="stock-details d-flex justify-content-end g-10 fs-14 fw-bold">
+                                <span id="" class="change-down" data-last-price="142.08">-1.48</span>
+                                <span id="" class="change-down">-1.04</span>
+                            </div>
+                        </div>
+                    </div>
+                </a>
+            </div>
+          </div>
+          <div class="mx-1">
+            <div class="stock-card" id="">
+                <a style="min-width:200px" href="/stock-quote/AMZN:NMS" class="summary-card active-sm text-white" aria-label="Stock Quote" tabindex="-1">
+                    <div class="market-summary-card">
+                        <div class="card-img">
+                            <div class="d-flex justify-content-between align-items-center g-10">
+                                <h4 class="d-flex align-items-center gap-2 fs-18">
+                                    <div class="widget-stock-img">
+                                        <img src="https://s3.wasabisys.com/rpdapp1/upload/photos/2023/img/AMZN.png" alt="AMZN">
+                                    </div>AMZN                                                                </h4>
+                                <span class="text-white d-block text-start fs-14 fw-bold" id="">142.08</span>
+                            </div>
+                            <div class="stock-details d-flex justify-content-end g-10 fs-14 fw-bold">
+                                <span id="" class="change-down" data-last-price="142.08">-1.48</span>
+                                <span id="" class="change-down">-1.04</span>
+                            </div>
+                        </div>
+                    </div>
+                </a>
+            </div>
+          </div>
+          <div class="mx-1">
+            <div class="stock-card" id="">
+                <a style="min-width:200px" href="/stock-quote/AMZN:NMS" class="summary-card active-sm text-white" aria-label="Stock Quote" tabindex="-1">
+                    <div class="market-summary-card">
+                        <div class="card-img">
+                            <div class="d-flex justify-content-between align-items-center g-10">
+                                <h4 class="d-flex align-items-center gap-2 fs-18">
+                                    <div class="widget-stock-img">
+                                        <img src="https://s3.wasabisys.com/rpdapp1/upload/photos/2023/img/AMZN.png" alt="AMZN">
+                                    </div>AMZN                                                                </h4>
+                                <span class="text-white d-block text-start fs-14 fw-bold" id="">142.08</span>
+                            </div>
+                            <div class="stock-details d-flex justify-content-end g-10 fs-14 fw-bold">
+                                <span id="" class="change-down" data-last-price="142.08">-1.48</span>
+                                <span id="" class="change-down">-1.04</span>
+                            </div>
+                        </div>
+                    </div>
+                </a>
+            </div>
+          </div>
+          <div class="mx-1">
+            <div class="stock-card" id="">
+                <a style="min-width:200px" href="/stock-quote/AMZN:NMS" class="summary-card active-sm text-white" aria-label="Stock Quote" tabindex="-1">
+                    <div class="market-summary-card">
+                        <div class="card-img">
+                            <div class="d-flex justify-content-between align-items-center g-10">
+                                <h4 class="d-flex align-items-center gap-2 fs-18">
+                                    <div class="widget-stock-img">
+                                        <img src="https://s3.wasabisys.com/rpdapp1/upload/photos/2023/img/AMZN.png" alt="AMZN">
+                                    </div>AMZN                                                                </h4>
+                                <span class="text-white d-block text-start fs-14 fw-bold" id="">142.08</span>
+                            </div>
+                            <div class="stock-details d-flex justify-content-end g-10 fs-14 fw-bold">
+                                <span id="" class="change-down" data-last-price="142.08">-1.48</span>
+                                <span id="" class="change-down">-1.04</span>
+                            </div>
+                        </div>
+                    </div>
+                </a>
+            </div>
+          </div>
+          <div class="mx-1">
+            <div class="stock-card" id="">
+                <a style="min-width:200px" href="/stock-quote/AMZN:NMS" class="summary-card active-sm text-white" aria-label="Stock Quote" tabindex="-1">
+                    <div class="market-summary-card">
+                        <div class="card-img">
+                            <div class="d-flex justify-content-between align-items-center g-10">
+                                <h4 class="d-flex align-items-center gap-2 fs-18">
+                                    <div class="widget-stock-img">
+                                        <img src="https://s3.wasabisys.com/rpdapp1/upload/photos/2023/img/AMZN.png" alt="AMZN">
+                                    </div>AMZN                                                                </h4>
+                                <span class="text-white d-block text-start fs-14 fw-bold" id="">142.08</span>
+                            </div>
+                            <div class="stock-details d-flex justify-content-end g-10 fs-14 fw-bold">
+                                <span id="" class="change-down" data-last-price="142.08">-1.48</span>
+                                <span id="" class="change-down">-1.04</span>
+                            </div>
+                        </div>
+                    </div>
+                </a>
+            </div>
+          </div>
+          <div class="mx-1">
+            <div class="stock-card" id="">
+                <a style="min-width:200px" href="/stock-quote/AMZN:NMS" class="summary-card active-sm text-white" aria-label="Stock Quote" tabindex="-1">
+                    <div class="market-summary-card">
+                        <div class="card-img">
+                            <div class="d-flex justify-content-between align-items-center g-10">
+                                <h4 class="d-flex align-items-center gap-2 fs-18">
+                                    <div class="widget-stock-img">
+                                        <img src="https://s3.wasabisys.com/rpdapp1/upload/photos/2023/img/AMZN.png" alt="AMZN">
+                                    </div>AMZN                                                                </h4>
+                                <span class="text-white d-block text-start fs-14 fw-bold" id="">142.08</span>
+                            </div>
+                            <div class="stock-details d-flex justify-content-end g-10 fs-14 fw-bold">
+                                <span id="" class="change-down" data-last-price="142.08">-1.48</span>
+                                <span id="" class="change-down">-1.04</span>
+                            </div>
+                        </div>
+                    </div>
+                </a>
+            </div>
+          </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- Hero Section End  -->
+  <!-- FEATURED VIDEOS Section Start -->
+  <section class="featured-video container-fluid py-80">
+    <div class="container">
+      <div class="row">
+        <div class="col-12">
+          <div class="d-flex justify-content-between align-items-center btn-flex mb-4">
+            <div class="main-heading-help ">
+              <h2 class="icon-heading">Featured Videos</h2>
+            </div>
+            <div class="help-btn-all text-end ">
+              <a href="/ceo-interviews/" class="btn btn-primary fs-18 px-3 py-2" aria-label="View All videos">View
+                all <i class="bi bi-arrow-right"></i></a>
+            </div>
+          </div>
+          <!-- slick Multiple video Items Start -->
+          <div class="video-slider">
+            <div class="video-card">
+              <div class="featured-video-1 m-auto bg-white card-hover pb-2">
+                <div class="video-featured position-relative">
+                  <form action="">
+                    <input type="hidden" name="video_id" value="SSxX2QLiqzM" tabindex="-1">
+                    <div class="video-play-icon-small position-absolute">
+                      <button type="submit" aria-label="Circle button" tabindex="-1" fdprocessedid="cefdud"
+                        class="border-0  d-flex justify-content-center align-items-center"><img
+                          src="https://s3.wasabisys.com/rpdapp1/upload/photos/2023/img/circle-button-small.png"
+                          alt="circle_button"></button>
+                    </div>
+                  </form>
+                  <img src="https://i.ytimg.com/vi/SSxX2QLiqzM/mqdefault.jpg" alt="thumbnail_card_img"
+                    class="thumbnail-card w-100">
+                </div>
+                <div class="video-bio px-2 pt-2">
+                  <div class="artical-au d-flex justify-content-between pb-3">
+                    <div class="by-name"><i><span>RICH TV LIVE</span></i></div>
+                    <div class="d-flex">
+                      <span>Oct 18 2023</span>
+                    </div>
+                  </div>
+                  <h3 class="fs-18 fw-bolder ">Russia Putin and China XI meet while Biden sits down with Netanya ...
+                  </h3>
+                </div>
+              </div>
+            </div>
+            <div class="video-card">
+              <div class="featured-video-1 m-auto bg-white card-hover pb-2">
+                <div class="video-featured position-relative">
+                  <form action="">
+                    <input type="hidden" name="video_id" value="SSxX2QLiqzM" tabindex="-1">
+                    <div class="video-play-icon-small position-absolute">
+                      <button type="submit" aria-label="Circle button" tabindex="-1" fdprocessedid="cefdud"
+                        class="border-0  d-flex justify-content-center align-items-center"><img
+                          src="https://s3.wasabisys.com/rpdapp1/upload/photos/2023/img/circle-button-small.png"
+                          alt="circle_button"></button>
+                    </div>
+                  </form>
+                  <img src="https://i.ytimg.com/vi/SSxX2QLiqzM/mqdefault.jpg" alt="thumbnail_card_img"
+                    class="thumbnail-card w-100">
+                </div>
+                <div class="video-bio px-2 pt-2">
+                  <div class="artical-au d-flex justify-content-between pb-3">
+                    <div class="by-name"><i><span>RICH TV LIVE</span></i></div>
+                    <div class="d-flex">
+                      <span>Oct 18 2023</span>
+                    </div>
+                  </div>
+                  <h3 class="fs-18 fw-bolder ">Russia Putin and China XI meet while Biden sits down with Netanya ...
+                  </h3>
+                </div>
+              </div>
+            </div>
+            <div class="video-card">
+              <div class="featured-video-1 m-auto bg-white card-hover pb-2">
+                <div class="video-featured position-relative">
+                  <form action="">
+                    <input type="hidden" name="video_id" value="SSxX2QLiqzM" tabindex="-1">
+                    <div class="video-play-icon-small position-absolute">
+                      <button type="submit" aria-label="Circle button" tabindex="-1" fdprocessedid="cefdud"
+                        class="border-0  d-flex justify-content-center align-items-center"><img
+                          src="https://s3.wasabisys.com/rpdapp1/upload/photos/2023/img/circle-button-small.png"
+                          alt="circle_button"></button>
+                    </div>
+                  </form>
+                  <img src="https://i.ytimg.com/vi/SSxX2QLiqzM/mqdefault.jpg" alt="thumbnail_card_img"
+                    class="thumbnail-card w-100">
+                </div>
+                <div class="video-bio px-2 pt-2">
+                  <div class="artical-au d-flex justify-content-between pb-3">
+                    <div class="by-name"><i><span>RICH TV LIVE</span></i></div>
+                    <div class="d-flex">
+                      <span>Oct 18 2023</span>
+                    </div>
+                  </div>
+                  <h3 class="fs-18 fw-bolder ">Russia Putin and China XI meet while Biden sits down with Netanya ...
+                  </h3>
+                </div>
+              </div>
+            </div>
+            <div class="video-card">
+              <div class="featured-video-1 m-auto bg-white card-hover pb-2">
+                <div class="video-featured position-relative">
+                  <form action="">
+                    <input type="hidden" name="video_id" value="SSxX2QLiqzM" tabindex="-1">
+                    <div class="video-play-icon-small position-absolute">
+                      <button type="submit" aria-label="Circle button" tabindex="-1" fdprocessedid="cefdud"
+                        class="border-0  d-flex justify-content-center align-items-center"><img
+                          src="https://s3.wasabisys.com/rpdapp1/upload/photos/2023/img/circle-button-small.png"
+                          alt="circle_button"></button>
+                    </div>
+                  </form>
+                  <img src="https://i.ytimg.com/vi/SSxX2QLiqzM/mqdefault.jpg" alt="thumbnail_card_img"
+                    class="thumbnail-card w-100">
+                </div>
+                <div class="video-bio px-2 pt-2">
+                  <div class="artical-au d-flex justify-content-between pb-3">
+                    <div class="by-name"><i><span>RICH TV LIVE</span></i></div>
+                    <div class="d-flex">
+                      <span>Oct 18 2023</span>
+                    </div>
+                  </div>
+                  <h3 class="fs-18 fw-bolder ">Russia Putin and China XI meet while Biden sits down with Netanya ...
+                  </h3>
+                </div>
+              </div>
+            </div>
+            <div class="video-card">
+              <div class="featured-video-1 m-auto bg-white card-hover pb-2">
+                <div class="video-featured position-relative">
+                  <form action="">
+                    <input type="hidden" name="video_id" value="SSxX2QLiqzM" tabindex="-1">
+                    <div class="video-play-icon-small position-absolute">
+                      <button type="submit" aria-label="Circle button" tabindex="-1" fdprocessedid="cefdud"
+                        class="border-0  d-flex justify-content-center align-items-center"><img
+                          src="https://s3.wasabisys.com/rpdapp1/upload/photos/2023/img/circle-button-small.png"
+                          alt="circle_button"></button>
+                    </div>
+                  </form>
+                  <img src="https://i.ytimg.com/vi/SSxX2QLiqzM/mqdefault.jpg" alt="thumbnail_card_img"
+                    class="thumbnail-card w-100">
+                </div>
+                <div class="video-bio px-2 pt-2">
+                  <div class="artical-au d-flex justify-content-between pb-3">
+                    <div class="by-name"><i><span>RICH TV LIVE</span></i></div>
+                    <div class="d-flex">
+                      <span>Oct 18 2023</span>
+                    </div>
+                  </div>
+                  <h3 class="fs-18 fw-bolder ">Russia Putin and China XI meet while Biden sits down with Netanya ...
+                  </h3>
+                </div>
+              </div>
+            </div>
+            <div class="video-card">
+              <div class="featured-video-1 m-auto bg-white card-hover pb-2">
+                <div class="video-featured position-relative">
+                  <form action="">
+                    <input type="hidden" name="video_id" value="SSxX2QLiqzM" tabindex="-1">
+                    <div class="video-play-icon-small position-absolute">
+                      <button type="submit" aria-label="Circle button" tabindex="-1" fdprocessedid="cefdud"
+                        class="border-0  d-flex justify-content-center align-items-center"><img
+                          src="https://s3.wasabisys.com/rpdapp1/upload/photos/2023/img/circle-button-small.png"
+                          alt="circle_button"></button>
+                    </div>
+                  </form>
+                  <img src="https://i.ytimg.com/vi/SSxX2QLiqzM/mqdefault.jpg" alt="thumbnail_card_img"
+                    class="thumbnail-card w-100">
+                </div>
+                <div class="video-bio px-2 pt-2">
+                  <div class="artical-au d-flex justify-content-between pb-3">
+                    <div class="by-name"><i><span>RICH TV LIVE</span></i></div>
+                    <div class="d-flex">
+                      <span>Oct 18 2023</span>
+                    </div>
+                  </div>
+                  <h3 class="fs-18 fw-bolder ">Russia Putin and China XI meet while Biden sits down with Netanya ...
+                  </h3>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- slick Multiple video Items End -->
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- FEATURED VIDEOS Section End -->
+  <!-- advanced-features-section Start -->
+  <section class="advanced-features-section container-fluid pb-80">
+    <div class="container">
+      <div class="main-heading-help advanced-features-main  text-center mb-5">
+        <h2 class="icon-heading text-start">Unleash Market Potential: Key Features</h2>
+      </div>
+      <div class="row key-features">
+        <div class="col-lg-4 col-md-6 col-sm-12 col-12 mb-4">
+          <div class="feature text-center h-100">
+            <div class="d-flex flex-column gap-4">
+              <img src="https://s3.wasabisys.com/rpdapp1/upload/photos/2023/img/icon-2.png" alt="icon"
+                class="d-block m-auto">
+              <h3 class="bg-primary rounded-5 fs-6 fw-bolder lh-lg m-auto  ">Personalized Watchlists</h3>
+              <p class="text-center">Tailor your trading journey! Create and customize watchlists to track stocks that
+                matter most to you. Stay ahead with curated lists based on your preferences. </p>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-4 col-md-6 col-sm-12 col-12 mb-4">
+          <div class="feature text-center h-100">
+            <div class="d-flex flex-column gap-4">
+              <img src="https://s3.wasabisys.com/rpdapp1/upload/photos/2023/img/icon-1.png" alt="icon"
+                class="d-block m-auto">
+              <h3 class="bg-primary rounded-5 fs-6 fw-bolder lh-lg m-auto  ">Expert Top Picks</h3>
+              <p class="text-center">Navigate the market with confidence! Our seasoned experts handpick stocks with high
+                potential. Benefit from their insights and make informed decisions. </p>
+            </div>
+
+          </div>
+        </div>
+        <div class="col-lg-4 col-md-6 col-sm-12 col-12 mb-4">
+          <div class="feature text-center h-100">
+            <div class="d-flex flex-column gap-4">
+              <img src="https://s3.wasabisys.com/rpdapp1/upload/photos/2023/img/icon-4.png" alt="icon"
+                class="d-block m-auto">
+              <h3 class="bg-primary rounded-5 fs-6 fw-bolder lh-lg m-auto  ">Real-Time Market Alerts</h3>
+              <p class="text-center">Never miss a beat! Get instant notifications on market shifts, ensuring you're
+                always in the loop. React swiftly to opportunities and trends as they emerge. </p>
+            </div>
+
+          </div>
+        </div>
+        <div class="col-lg-4 col-md-6 col-sm-12 col-12 mb-4">
+          <div class="feature text-center h-100">
+            <div class="d-flex flex-column gap-4">
+              <img src="https://s3.wasabisys.com/rpdapp1/upload/photos/2023/img/richtv-groupchat.svg" alt="icon"
+                class="d-block m-auto">
+              <h3 class="bg-primary rounded-5 fs-6 fw-bolder lh-lg m-auto  ">Vibrant Group Chats</h3>
+              <p class="text-center">Connect, discuss, and strategize! Join our dynamic chat rooms where traders share
+                insights, tips, and real-time updates. Be part of a thriving community. </p>
+            </div>
+
+          </div>
+        </div>
+
+        <div class="col-lg-4 col-md-6 col-sm-12 col-12 mb-4">
+          <div class="feature text-center h-100">
+            <div class="d-flex flex-column gap-4">
+              <img src="https://s3.wasabisys.com/rpdapp1/upload/photos/2023/img/richtv-anylatics.svg" alt="icon"
+                class="d-block m-auto">
+              <h3 class="bg-primary rounded-5 fs-6 fw-bolder lh-lg m-auto  ">In-Depth Technical Analysis</h3>
+              <p class="text-center">Dive deep into data! Our comprehensive technical analysis provides a clear picture
+                of market movements. Equip yourself with knowledge and trade smartly. </p>
+            </div>
+
+          </div>
+        </div>
+        <div class="col-lg-4 col-md-6 col-sm-12 col-12 mb-4">
+          <div class="feature text-center h-100">
+            <div class="d-flex flex-column  gap-4">
+              <img src="https://s3.wasabisys.com/rpdapp1/upload/photos/2023/img/richtv-training.svg" alt="icon"
+                class="d-block m-auto">
+              <h3 class="bg-primary rounded-5 fs-6 fw-bolder lh-lg m-auto  ">Interactive Live Trainings</h3>
+              <p class="text-center">Learn from the best! Attend live sessions with industry professionals. Enhance your
+                trading skills, ask questions, and get real-time feedback.</p>
+            </div>
+
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+  <!-- advanced-features-section End -->
+  <!-- Top Tables Section -->
+  <section class="stock-market-section container-fluid">
+    <div class="container">
+      <div class="col-12 main-stock">
+
+      </div>
+      <div class="row gy-5">
+        <div class="col-lg-6 mb-32">
+          <div class="top-cryptocurrency-heading">
+            <div class="">
+              <h3 class="fs-18 fw-bolder icon-short-heading mb-4">Top 10 Soaring Stocks <img
+                  src="https://s3.wasabisys.com/rpdapp1/upload/photos/2023/img/arrow-next.svg" alt="arrow"
+                  class="title-arrow"></h3>
+              <p class="update-date fs-13 text-end">Last Updated Oct 19, 2023</p>
+            </div>
+          </div>
+          <div class="stock-table-data position-relative px-3">
+            <div class="table-responsive">
+              <div class="overlay-home-ajax" style="display: none;"></div>
+              <table class="table stock-market-table1 height-1024">
+                <thead>
+                  <tr>
+                    <th scope="col" class="sticky-side position-sticky bg-white text-black ps-0">Name</th>
+
+                    <th scope="col" class="text-black">Last</th>
+                    <th scope="col" class="text-black">Chg</th>
+                    <th scope="col" class="text-black">%Chg</th>
+
+                    <th scope="col" class="text-black">Watchlist</th>
+                  </tr>
+                </thead>
+                <tbody id="stock-table-body">
+                  <tr id="ROKU">
+                    <td class="gray2 sticky-side position-sticky bg-white pl-0">
+                      <a href="/stock-quote/ROKU:NMS" class="gray d-block" aria-label="Stock Quote">
+                        <span class="first-td  table-btn  d-inline-block bg-red text-white">ROKU</span>
+                        <span class="d-block fw-bolder text-color text-color">Roku, Inc.</span>
+                      </a>
+                    </td>
+                    <td class="gray" id="symbol-price">$62.1</td>
+                    <td class="Green" id="price-change" data-last-price="62.1">+1.2350006</td>
+                    <td class="Green" id="percent-change">+1.9887289</td>
+                    <td class="Watchlist-btn text-center">
+
+                      <p class="add-icn" data-id="" data-symbol="ROKU" data-exchange="NMS">
+                        <a href="javascript:void(0)" class="clr-primary table-stars fs-5"><i class="bi bi-star"></i>
+                          <i class="bi bi-star-fill"></i>
+                        </a>
+                      </p>
+
+                    </td>
+                  </tr>
+                  <tr id="RMLFF">
+                    <td class="gray2 sticky-side position-sticky bg-white pl-0">
+                      <a href="/stock-quote/RMLFF:PNK" class="gray d-block" aria-label="Stock Quote">
+                        <span class="first-td  table-btn  d-inline-block bg-red text-white">RMLFF</span>
+                        <span class="d-block fw-bolder text-color text-color">RUSORO MINING LTD</span>
+                      </a>
+                    </td>
+                    <td class="gray" id="symbol-price">$0.32</td>
+                    <td class="Green" id="price-change" data-last-price="0.32">+0.04000002</td>
+                    <td class="Green" id="percent-change">+12.500008</td>
+                    <td class="Watchlist-btn text-center">
+
+                      <p class="add-icn" data-id="" data-symbol="RMLFF" data-exchange="PNK">
+                        <a href="javascript:void(0)" class="clr-primary table-stars fs-5"><i class="bi bi-star"></i>
+                          <i class="bi bi-star-fill"></i>
+                        </a>
+                      </p>
+
+                    </td>
+                  </tr>
+                  <tr id="DIS">
+                    <td class="gray2 sticky-side position-sticky bg-white pl-0">
+                      <a href="/stock-quote/DIS:NYQ" class="gray d-block" aria-label="Stock Quote">
+                        <span class="first-td  table-btn  d-inline-block bg-red text-white">DIS</span>
+                        <span class="d-block fw-bolder text-color text-color">Walt Disney Company (The)</span>
+                      </a>
+                    </td>
+                    <td class="gray" id="symbol-price">$84.68</td>
+                    <td class="Green" id="price-change" data-last-price="84.68">+0.25</td>
+                    <td class="Green" id="percent-change">+0.2952291</td>
+                    <td class="Watchlist-btn text-center">
+
+                      <p class="add-icn" data-id="" data-symbol="DIS" data-exchange="NYQ">
+                        <a href="javascript:void(0)" class="clr-primary table-stars fs-5"><i class="bi bi-star"></i>
+                          <i class="bi bi-star-fill"></i>
+                        </a>
+                      </p>
+
+                    </td>
+                  </tr>
+                  <tr id="UBER">
+                    <td class="gray2 sticky-side position-sticky bg-white pl-0">
+                      <a href="/stock-quote/UBER:NYQ" class="gray d-block" aria-label="Stock Quote">
+                        <span class="first-td  table-btn  d-inline-block bg-red text-white">UBER</span>
+                        <span class="d-block fw-bolder text-color text-color">Uber Technologies, Inc.</span>
+                      </a>
+                    </td>
+                    <td class="gray" id="symbol-price">$43</td>
+                    <td class="Green" id="price-change" data-last-price="43">+0.049999237</td>
+                    <td class="Green" id="percent-change">+0.1162773</td>
+                    <td class="Watchlist-btn text-center">
+
+                      <p class="add-icn" data-id="" data-symbol="UBER" data-exchange="NYQ">
+                        <a href="javascript:void(0)" class="clr-primary table-stars fs-5"><i class="bi bi-star"></i>
+                          <i class="bi bi-star-fill"></i>
+                        </a>
+                      </p>
+
+                    </td>
+                  </tr>
+                  <tr id="SOFI">
+                    <td class="gray2 sticky-side position-sticky bg-white pl-0">
+                      <a href="/stock-quote/SOFI:NMS" class="gray d-block" aria-label="Stock Quote">
+                        <span class="first-td  table-btn  d-inline-block bg-red text-white">SOFI</span>
+                        <span class="d-block fw-bolder text-color text-color">SoFi Technologies, Inc.</span>
+                      </a>
+                    </td>
+                    <td class="gray" id="symbol-price">$7.77</td>
+                    <td class="Green" id="price-change" data-last-price="7.77">+0.049900055</td>
+                    <td class="Green" id="percent-change">+0.64221436</td>
+                    <td class="Watchlist-btn text-center">
+
+                      <p class="add-icn" data-id="" data-symbol="SOFI" data-exchange="NMS">
+                        <a href="javascript:void(0)" class="clr-primary table-stars fs-5"><i class="bi bi-star"></i>
+                          <i class="bi bi-star-fill"></i>
+                        </a>
+                      </p>
+
+                    </td>
+                  </tr>
+                  <tr id="FUBO">
+                    <td class="gray2 sticky-side position-sticky bg-white pl-0">
+                      <a href="/stock-quote/FUBO:NYQ" class="gray d-block" aria-label="Stock Quote">
+                        <span class="first-td  table-btn  d-inline-block bg-red text-white">FUBO</span>
+                        <span class="d-block fw-bolder text-color text-color">fuboTV Inc.</span>
+                      </a>
+                    </td>
+                    <td class="gray" id="symbol-price">$2.46</td>
+                    <td class="Green" id="price-change" data-last-price="2.46">+0.045000076</td>
+                    <td class="Green" id="percent-change">+1.8292714</td>
+                    <td class="Watchlist-btn text-center">
+
+                      <p class="add-icn" data-id="" data-symbol="FUBO" data-exchange="NYQ">
+                        <a href="javascript:void(0)" class="clr-primary table-stars fs-5"><i class="bi bi-star"></i>
+                          <i class="bi bi-star-fill"></i>
+                        </a>
+                      </p>
+
+                    </td>
+                  </tr>
+                  <tr id="PYPL">
+                    <td class="gray2 sticky-side position-sticky bg-white pl-0">
+                      <a href="/stock-quote/PYPL:NMS" class="gray d-block" aria-label="Stock Quote">
+                        <span class="first-td  table-btn  d-inline-block bg-red text-white">PYPL</span>
+                        <span class="d-block fw-bolder text-color text-color">PayPal Holdings, Inc.</span>
+                      </a>
+                    </td>
+                    <td class="gray" id="symbol-price">$55.8</td>
+                    <td class="Green" id="price-change" data-last-price="55.8">+0.14500046</td>
+                    <td class="Green" id="percent-change">+0.25985745</td>
+                    <td class="Watchlist-btn text-center">
+
+                      <p class="add-icn" data-id="" data-symbol="PYPL" data-exchange="NMS">
+                        <a href="javascript:void(0)" class="clr-primary table-stars fs-5"><i class="bi bi-star"></i>
+                          <i class="bi bi-star-fill"></i>
+                        </a>
+                      </p>
+
+                    </td>
+                  </tr>
+                  <tr id="PLTR">
+                    <td class="gray2 sticky-side position-sticky bg-white pl-0">
+                      <a href="/stock-quote/PLTR:NYQ" class="gray d-block" aria-label="Stock Quote">
+                        <span class="first-td  table-btn  d-inline-block bg-red text-white">PLTR</span>
+                        <span class="d-block fw-bolder text-color text-color">Palantir Technologies Inc.</span>
+                      </a>
+                    </td>
+                    <td class="gray" id="symbol-price">$17.2</td>
+                    <td class="Green" id="price-change" data-last-price="17.2">+0.074998856</td>
+                    <td class="Green" id="percent-change">+0.43603984</td>
+                    <td class="Watchlist-btn text-center">
+
+                      <p class="add-icn" data-id="" data-symbol="PLTR" data-exchange="NYQ">
+                        <a href="javascript:void(0)" class="clr-primary table-stars fs-5"><i class="bi bi-star"></i>
+                          <i class="bi bi-star-fill"></i>
+                        </a>
+                      </p>
+
+                    </td>
+                  </tr>
+                  <tr id="NKLA">
+                    <td class="gray2 sticky-side position-sticky bg-white pl-0">
+                      <a href="/stock-quote/NKLA:NMS" class="gray d-block" aria-label="Stock Quote">
+                        <span class="first-td  table-btn  d-inline-block bg-green text-white">NKLA</span>
+                        <span class="d-block fw-bolder text-color text-color">Nikola Corporation</span>
+                      </a>
+                    </td>
+                    <td class="gray" id="symbol-price">$1.035</td>
+                    <td class="Red" id="price-change" data-last-price="1.035">-0.004999995</td>
+                    <td class="Red" id="percent-change">-0.48309135</td>
+                    <td class="Watchlist-btn text-center">
+
+                      <p class="add-icn" data-id="" data-symbol="NKLA" data-exchange="NMS">
+                        <a href="javascript:void(0)" class="clr-primary table-stars fs-5"><i class="bi bi-star"></i>
+                          <i class="bi bi-star-fill"></i>
+                        </a>
+                      </p>
+
+                    </td>
+                  </tr>
+                  <tr id="LGHL">
+                    <td class="gray2 sticky-side position-sticky bg-white pl-0">
+                      <a href="/stock-quote/LGHL:NCM" class="gray d-block" aria-label="Stock Quote">
+                        <span class="first-td  table-btn  d-inline-block bg-red text-white">LGHL</span>
+                        <span class="d-block fw-bolder text-color text-color">Lion Group Holding Ltd.</span>
+                      </a>
+                    </td>
+                    <td class="gray" id="symbol-price">$1.05</td>
+                    <td class="Green" id="price-change" data-last-price="1.05">+0.00999999</td>
+                    <td class="Green" id="percent-change">+0.95238006</td>
+                    <td class="Watchlist-btn text-center">
+
+                      <p class="add-icn" data-id="" data-symbol="LGHL" data-exchange="NCM">
+                        <a href="javascript:void(0)" class="clr-primary table-stars fs-5"><i class="bi bi-star"></i>
+                          <i class="bi bi-star-fill"></i>
+                        </a>
+                      </p>
+
+                    </td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-lg-6 mb-32">
+          <div class="top-cryptocurrency-section">
+            <div class="top-cryptocurrency-heading">
+              <div class="">
+                <h3 class="fs-18 fw-bolder icon-short-heading mb-4"> Top 10 Cryptocurrency Movers <img
+                    src="https://s3.wasabisys.com/rpdapp1/upload/photos/2023/img/arrow-next.svg" alt="arrow"
+                    class="title-arrow"></h3>
+                <p class="update-date fs-13 text-end">Last Updated Oct 19, 2023</p>
+              </div>
+            </div>
+            <div class="stock-table-data position-relative px-3">
+              <div class="table-responsive">
+                <div class="overlay-home-ajax" style="display: none;"></div>
+                <table class="table stock-market-table1 height-1024">
+                  <thead>
+                    <tr>
+                      <th scope="col" class="sticky-side position-sticky bg-white text-black ps-0">Name</th>
+                      <th scope="col" class="text-black">Last</th>
+                      <th scope="col" class="text-black">Chg</th>
+                      <th scope="col" class="text-black">%Chg</th>
+                      <th scope="col" class="text-black">Watchlist</th>
+                    </tr>
+                  </thead>
+                  <tbody id="crypto-table-body">
+                    <tr id="XRP-USD">
+                      <td class="gray2 sticky-side position-sticky bg-white pl-0">
+                        <a href="/coin/XRP-USD:CCC" class="gray d-block" aria-label="Stock Quote">
+                          <span class="first-td  table-btn  d-inline-block bg-green text-white">XRP-USD</span>
+                          <span class="d-block fw-bolder text-color text-color">XRP USD</span>
+                        </a>
+                      </td>
+                      <td class="gray" id="symbol-price">$0.48812896</td>
+                      <td class="Red" id="price-change" data-last-price="0.48812896">-0.0016606152</td>
+                      <td class="Red" id="percent-change">-0.34016144</td>
+                      <td class="Watchlist-btn text-center">
+
+                        <p class="add-icn" data-id="" data-symbol="XRP-USD" data-exchange="CCC">
+                          <a href="javascript:void(0)" class="clr-primary table-stars fs-5"><i class="bi bi-star"></i>
+                            <i class="bi bi-star-fill"></i>
+                          </a>
+                        </p>
+
+                      </td>
+                    </tr>
+                    <tr id="FLOW-USD">
+                      <td class="gray2 sticky-side position-sticky bg-white pl-0">
+                        <a href="/coin/FLOW-USD:CCC" class="gray d-block" aria-label="Stock Quote">
+                          <span class="first-td  table-btn  d-inline-block bg-green text-white">FLOW-USD</span>
+                          <span class="d-block fw-bolder text-color text-color">Flow USD</span>
+                        </a>
+                      </td>
+                      <td class="gray" id="symbol-price">$0.4319715</td>
+                      <td class="Red" id="price-change" data-last-price="0.4319715">-0.019318521</td>
+                      <td class="Red" id="percent-change">-4.405067</td>
+                      <td class="Watchlist-btn text-center">
+
+                        <p class="add-icn" data-id="" data-symbol="FLOW-USD" data-exchange="CCC">
+                          <a href="javascript:void(0)" class="clr-primary table-stars fs-5"><i class="bi bi-star"></i>
+                            <i class="bi bi-star-fill"></i>
+                          </a>
+                        </p>
+
+                      </td>
+                    </tr>
+                    <tr id="DASH-USD">
+                      <td class="gray2 sticky-side position-sticky bg-white pl-0">
+                        <a href="/coin/DASH-USD:CCC" class="gray d-block" aria-label="Stock Quote">
+                          <span class="first-td  table-btn  d-inline-block bg-green text-white">DASH-USD</span>
+                          <span class="d-block fw-bolder text-color text-color">Dash USD</span>
+                        </a>
+                      </td>
+                      <td class="gray" id="symbol-price">$24.802011</td>
+                      <td class="Red" id="price-change" data-last-price="24.802011">-0.039678574</td>
+                      <td class="Red" id="percent-change">-0.15911657</td>
+                      <td class="Watchlist-btn text-center">
+
+                        <p class="add-icn" data-id="" data-symbol="DASH-USD" data-exchange="CCC">
+                          <a href="javascript:void(0)" class="clr-primary table-stars fs-5"><i class="bi bi-star"></i>
+                            <i class="bi bi-star-fill"></i>
+                          </a>
+                        </p>
+
+                      </td>
+                    </tr>
+                    <tr id="BTC-USD">
+                      <td class="gray2 sticky-side position-sticky bg-white pl-0">
+                        <a href="/coin/BTC-USD:CCC" class="gray d-block" aria-label="Stock Quote">
+                          <span class="first-td  table-btn  d-inline-block bg-red text-white">BTC-USD</span>
+                          <span class="d-block fw-bolder text-color text-color">Bitcoin USD</span>
+                        </a>
+                      </td>
+                      <td class="gray" id="symbol-price">$28308.338</td>
+                      <td class="Green" id="price-change" data-last-price="28308.338">+275.62695</td>
+                      <td class="Green" id="percent-change">+0.9711806</td>
+                      <td class="Watchlist-btn text-center">
+
+                        <p class="add-icn" data-id="" data-symbol="BTC-USD" data-exchange="CCC">
+                          <a href="javascript:void(0)" class="clr-primary table-stars fs-5"><i class="bi bi-star"></i>
+                            <i class="bi bi-star-fill"></i>
+                          </a>
+                        </p>
+
+                      </td>
+                    </tr>
+                    <tr id="SOL-USD">
+                      <td class="gray2 sticky-side position-sticky bg-white pl-0">
+                        <a href="/coin/SOL-USD:CCC" class="gray d-block" aria-label="Stock Quote">
+                          <span class="first-td  table-btn  d-inline-block bg-red text-white">SOL-USD</span>
+                          <span class="d-block fw-bolder text-color text-color">Solana USD</span>
+                        </a>
+                      </td>
+                      <td class="gray" id="symbol-price">$23.433817</td>
+                      <td class="Green" id="price-change" data-last-price="23.433817">+1.3496857</td>
+                      <td class="Green" id="percent-change">+5.7052684</td>
+                      <td class="Watchlist-btn text-center">
+
+                        <p class="add-icn" data-id="" data-symbol="SOL-USD" data-exchange="CCC">
+                          <a href="javascript:void(0)" class="clr-primary table-stars fs-5"><i class="bi bi-star"></i>
+                            <i class="bi bi-star-fill"></i>
+                          </a>
+                        </p>
+
+                      </td>
+                    </tr>
+                    <tr id="AVAX-USD">
+                      <td class="gray2 sticky-side position-sticky bg-white pl-0">
+                        <a href="/coin/AVAX-USD:CCC" class="gray d-block" aria-label="Stock Quote">
+                          <span class="first-td  table-btn  d-inline-block bg-green text-white">AVAX-USD</span>
+                          <span class="d-block fw-bolder text-color text-color">Avalanche USD</span>
+                        </a>
+                      </td>
+                      <td class="gray" id="symbol-price">$8.904363</td>
+                      <td class="Red" id="price-change" data-last-price="8.904363">-0.036595345</td>
+                      <td class="Red" id="percent-change">-0.40561396</td>
+                      <td class="Watchlist-btn text-center">
+
+                        <p class="add-icn" data-id="" data-symbol="AVAX-USD" data-exchange="CCC">
+                          <a href="javascript:void(0)" class="clr-primary table-stars fs-5"><i class="bi bi-star"></i>
+                            <i class="bi bi-star-fill"></i>
+                          </a>
+                        </p>
+
+                      </td>
+                    </tr>
+                    <tr id="XMR-USD">
+                      <td class="gray2 sticky-side position-sticky bg-white pl-0">
+                        <a href="/coin/XMR-USD:CCC" class="gray d-block" aria-label="Stock Quote">
+                          <span class="first-td  table-btn  d-inline-block bg-green text-white">XMR-USD</span>
+                          <span class="d-block fw-bolder text-color text-color">Monero USD</span>
+                        </a>
+                      </td>
+                      <td class="gray" id="symbol-price">$149.803</td>
+                      <td class="Red" id="price-change" data-last-price="149.803">-0.30796814</td>
+                      <td class="Red" id="percent-change">-0.20377956</td>
+                      <td class="Watchlist-btn text-center">
+
+                        <p class="add-icn" data-id="" data-symbol="XMR-USD" data-exchange="CCC">
+                          <a href="javascript:void(0)" class="clr-primary table-stars fs-5"><i class="bi bi-star"></i>
+                            <i class="bi bi-star-fill"></i>
+                          </a>
+                        </p>
+
+                      </td>
+                    </tr>
+                    <tr id="LTC-USD">
+                      <td class="gray2 sticky-side position-sticky bg-white pl-0">
+                        <a href="/coin/LTC-USD:CCC" class="gray d-block" aria-label="Stock Quote">
+                          <span class="first-td  table-btn  d-inline-block bg-green text-white">LTC-USD</span>
+                          <span class="d-block fw-bolder text-color text-color">Litecoin USD</span>
+                        </a>
+                      </td>
+                      <td class="gray" id="symbol-price">$60.26262</td>
+                      <td class="Red" id="price-change" data-last-price="60.26262">-0.084983826</td>
+                      <td class="Red" id="percent-change">-0.13811073</td>
+                      <td class="Watchlist-btn text-center">
+
+                        <p class="add-icn" data-id="" data-symbol="LTC-USD" data-exchange="CCC">
+                          <a href="javascript:void(0)" class="clr-primary table-stars fs-5"><i class="bi bi-star"></i>
+                            <i class="bi bi-star-fill"></i>
+                          </a>
+                        </p>
+
+                      </td>
+                    </tr>
+                    <tr id="BNB-USD">
+                      <td class="gray2 sticky-side position-sticky bg-white pl-0">
+                        <a href="/coin/BNB-USD:CCC" class="gray d-block" aria-label="Stock Quote">
+                          <span class="first-td  table-btn  d-inline-block bg-green text-white">BNB-USD</span>
+                          <span class="d-block fw-bolder text-color text-color">BNB USD</span>
+                        </a>
+                      </td>
+                      <td class="gray" id="symbol-price">$210.25125</td>
+                      <td class="Red" id="price-change" data-last-price="210.25125">-1.4023132</td>
+                      <td class="Red" id="percent-change">-0.6613983</td>
+                      <td class="Watchlist-btn text-center">
+
+                        <p class="add-icn" data-id="" data-symbol="BNB-USD" data-exchange="CCC">
+                          <a href="javascript:void(0)" class="clr-primary table-stars fs-5"><i class="bi bi-star"></i>
+                            <i class="bi bi-star-fill"></i>
+                          </a>
+                        </p>
+
+                      </td>
+                    </tr>
+                    <tr id="ETH-USD">
+                      <td class="gray2 sticky-side position-sticky bg-white pl-0">
+                        <a href="/coin/ETH-USD:CCC" class="gray d-block" aria-label="Stock Quote">
+                          <span class="first-td  table-btn  d-inline-block bg-green text-white">ETH-USD</span>
+                          <span class="d-block fw-bolder text-color text-color">Ethereum USD</span>
+                        </a>
+                      </td>
+                      <td class="gray" id="symbol-price">$1561.3586</td>
+                      <td class="Red" id="price-change" data-last-price="1561.3586">-5.977783</td>
+                      <td class="Red" id="percent-change">-0.3801416</td>
+                      <td class="Watchlist-btn text-center">
+
+                        <p class="add-icn" data-id="" data-symbol="ETH-USD" data-exchange="CCC">
+                          <a href="javascript:void(0)" class="clr-primary table-stars fs-5"><i class="bi bi-star"></i>
+                            <i class="bi bi-star-fill"></i>
+                          </a>
+                        </p>
+
+                      </td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- Top Tables Section End-->
+  <!-- stock html start  -->
+  <section class="stock-quote container-fluid py-80" id="stock-quote">
+    <div class="container">
+      <div class="row gy-5">
+        <aside class="col-lg-4">
+          <div class="chat-main mb-40 border-grey border pb-0">
+            <div class="heading-summary mb-3 chat-main-common-padding border-bottom border-grey pt-2">
+              <h3 class="fs-6 fw-bolder lh-base">Dynamic Group Chats</h3>
+            </div>
+            <div class="chat-search chat-main-common-padding">
+              <form action="#">
+                <div class="input-group mt-3 mb-4 d-flex align-items-stretch">
+                  <span class="header-serch-icon position-absolute "><svg width="19" height="19" viewBox="0 0 19 19"
+                      fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path fill-rule="evenodd" clip-rule="evenodd"
+                        d="M16.0319 14.6177C17.2635 13.078 18 11.125 18 9C18 4.02944 13.9706 0 9 0C4.02944 0 0 4.02944 0 9C0 13.9706 4.02944 18 9 18C11.125 18 13.078 17.2635 14.6177 16.0319L17.2929 18.7071C17.6834 19.0976 18.3166 19.0976 18.7071 18.7071C19.0976 18.3166 19.0976 17.6834 18.7071 17.2929L16.0319 14.6177ZM16 9C16 12.866 12.866 16 9 16C5.13401 16 2 12.866 2 9C2 5.13401 5.13401 2 9 2C12.866 2 16 5.13401 16 9Z"
+                        fill="#777E90"></path>
+                    </svg></span>
+                  <input type="search" class="form-control rounded-pill border-grey bg_color border"
+                    id="group-search-widget" placeholder="Search Groups.." aria-label="search"
+                    aria-describedby="basic-addon1">
+                </div>
+              </form>
+            </div>
+            <div class="chat_output">
+              <p class="all-chaat all-chat-top chat-main-common-padding">All Chats</p>
+              <div id="search-widget">
+                <a href="#" aria-label="group_chat name">
+                  <div class="chat-data">
+                    <div class="d-flex justify-content-between align-items-center">
+                      <div class="d-flex align-items-center">
+                        <div class="user-profile">
+                          <img
+                            src="https://s3.wasabisys.com/rpdapp1/upload/photos/2022/03/mPXgeZZ9N3MG6sWGbF1q_14_0fede927c01608fd9feeb21d269d5173_avatar.png"
+                            alt="profile-image" class="border-primary rounded-circle border">
+                        </div>
+
+                        <div class="user-content">
+                          <p class="all-chat mb_5">NBM</p>
+                          <p class="user-message mb-0">$NBM up 6%</p>
+
+                        </div>
+                      </div>
+                      <div class="last-seen">5w</div>
+                    </div>
+                  </div>
+                </a>
+                <a href="#" aria-label="group_chat name">
+                  <div class="chat-data">
+                    <div class="d-flex justify-content-between align-items-center">
+                      <div class="d-flex align-items-center">
+                        <div class="user-profile">
+                          <img
+                            src="https://s3.wasabisys.com/rpdapp1/upload/photos/2022/06/gHpBmXswJ9TT3xusscF1_01_d6b25f924145c88a4ef11baf5b41ff94_avatar.png"
+                            alt="profile-image" class="border-primary rounded-circle border">
+                        </div>
+
+                        <div class="user-content">
+                          <p class="all-chat mb_5">ProMembers</p>
+                          <p class="user-message mb-0">NKLA up 32%</p>
+
+                        </div>
+                      </div>
+                      <div class="last-seen">5w</div>
+                    </div>
+                  </div>
+                </a>
+                <a href="#" aria-label="group_chat name">
+                  <div class="chat-data">
+                    <div class="d-flex justify-content-between align-items-center">
+                      <div class="d-flex align-items-center">
+                        <div class="user-profile">
+                          <div
+                            class="avatar-placeholder d-flex justify-content-center align-items-center border border-1 border-primary rounded-circle">
+                            R</div>
+                        </div>
+
+                        <div class="user-content">
+                          <p class="all-chat mb_5">RusoroMining Ltd</p>
+                          <p class="user-message mb-0">Had to been ripping up the whole time.
+                          </p>
+
+                        </div>
+                      </div>
+                      <div class="last-seen">9w</div>
+                    </div>
+                  </div>
+                </a>
+                <a href="#" aria-label="group_chat name">
+                  <div class="chat-data">
+                    <div class="d-flex justify-content-between align-items-center">
+                      <div class="d-flex align-items-center">
+                        <div class="user-profile">
+                          <div
+                            class="avatar-placeholder d-flex justify-content-center align-items-center border border-1 border-primary rounded-circle">
+                            C</div>
+                        </div>
+
+                        <div class="user-content">
+                          <p class="all-chat mb_5">CarvanaCo</p>
+                          <p class="user-message mb-0">Big day. Stocks on fire.</p>
+
+                        </div>
+                      </div>
+                      <div class="last-seen">12w</div>
+                    </div>
+                  </div>
+                </a>
+                <a href="#" aria-label="group_chat name">
+                  <div class="chat-data">
+                    <div class="d-flex justify-content-between align-items-center">
+                      <div class="d-flex align-items-center">
+                        <div class="user-profile">
+                          <img
+                            src="https://s3.wasabisys.com/rpdapp1/upload/photos/2022/03/fv9VoMRMLtpL1HqYPFdO_14_595b0c3defe3bd970fc66f43e1ac4fe7_avatar.png"
+                            alt="profile-image" class="border-primary rounded-circle border">
+                        </div>
+
+                        <div class="user-content">
+                          <p class="all-chat mb_5">VMC</p>
+                          <p class="user-message mb-0">VMC up 12%</p>
+
+                        </div>
+                      </div>
+                      <div class="last-seen">13w</div>
+                    </div>
+                  </div>
+                </a>
+              </div>
+              <div class="show-more-btn text-start border-top border-1 border-grey">
+                <a href="#" class="btn rounded-2 d-inline-flex align-items-center btn-primary gap-3"
+                  aria-label="Dynamic chat">Dynamic Group Chats<span class="fs-4"> ›</span></a>
+              </div>
+            </div>
+          </div>
+        </aside>
+        <div class="col-lg-8">
+          <section class="help-section">
+            <div class="row gy-5">
+              <div class="col-lg-6 col-md-6">
+                <div class="main_section mb-40 border-grey border pb-0">
+                  <div class="heading-summary mb-3 chat-main-common-padding border-bottom border-grey pt-2">
+                    <h3 class="fs-6 fw-bolder lh-base">IN-DEPTH MARKET ANALYSIS</h3>
+                  </div>
+
+                  <div class="chat_output">
+                    <div class="market-news border-bottom border-1 border-grey">
+                      <div class="d-flex align-items-center">
+                        <div class="feature-img">
+                          <div class="stock-post-img">
+                            <img src="https://richtv.io/wp-content/uploads/2023/10/CRWD_2023-10-16_19-24-33-150x150.png"
+                              alt="thumbnail-img">
+                          </div>
+                        </div>
+                        <div class="stock-post-content">
+                          <h4 class="lh-0 mb-0"><a href="#" aria-label="tittle">CrowdStrike (CRWD) and New Oriental
+                              Educ...</a></h4>
+                          <a class="stock-author-meta border-end border-1 border-grey" href="#"
+                            aria-label="author_link">Muazzam Rauf</a>
+                          <span>Oct 16, 2023</span>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="market-news border-bottom border-1 border-grey">
+                      <div class="d-flex align-items-center">
+                        <div class="feature-img">
+                          <div class="stock-post-img">
+                            <img src="https://richtv.io/wp-content/uploads/2023/10/CRWD_2023-10-16_19-24-33-150x150.png"
+                              alt="thumbnail-img">
+                          </div>
+                        </div>
+                        <div class="stock-post-content">
+                          <h4 class="lh-0 mb-0"><a href="#" aria-label="tittle">CrowdStrike (CRWD) and New Oriental
+                              Educ...</a></h4>
+                          <a class="stock-author-meta border-end border-1 border-grey" href="#"
+                            aria-label="author_link">Muazzam Rauf</a>
+                          <span>Oct 16, 2023</span>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="market-news border-bottom border-1 border-grey">
+                      <div class="d-flex align-items-center">
+                        <div class="feature-img">
+                          <div class="stock-post-img">
+                            <img src="https://richtv.io/wp-content/uploads/2023/10/CRWD_2023-10-16_19-24-33-150x150.png"
+                              alt="thumbnail-img">
+                          </div>
+                        </div>
+                        <div class="stock-post-content">
+                          <h4 class="lh-0 mb-0"><a href="#" aria-label="tittle">CrowdStrike (CRWD) and New Oriental
+                              Educ...</a></h4>
+                          <a class="stock-author-meta border-end border-1 border-grey" href="#"
+                            aria-label="author_link">Muazzam Rauf</a>
+                          <span>Oct 16, 2023</span>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="market-news border-bottom border-1 border-grey">
+                      <div class="d-flex align-items-center">
+                        <div class="feature-img">
+                          <div class="stock-post-img">
+                            <img src="https://richtv.io/wp-content/uploads/2023/10/CRWD_2023-10-16_19-24-33-150x150.png"
+                              alt="thumbnail-img">
+                          </div>
+                        </div>
+                        <div class="stock-post-content">
+                          <h4 class="lh-0 mb-0"><a href="#" aria-label="tittle">CrowdStrike (CRWD) and New Oriental
+                              Educ...</a></h4>
+                          <a class="stock-author-meta border-end border-1 border-grey" href="#"
+                            aria-label="author_link">Muazzam Rauf</a>
+                          <span>Oct 16, 2023</span>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="market-news ">
+                      <div class="d-flex align-items-center">
+                        <div class="feature-img">
+                          <div class="stock-post-img">
+                            <img src="https://richtv.io/wp-content/uploads/2023/10/CRWD_2023-10-16_19-24-33-150x150.png"
+                              alt="thumbnail-img">
+                          </div>
+                        </div>
+                        <div class="stock-post-content">
+                          <h4 class="lh-0 mb-0"><a href="#" aria-label="tittle">CrowdStrike (CRWD) and New Oriental
+                              Educ...</a></h4>
+                          <a class="stock-author-meta border-end border-1 border-grey" href="#"
+                            aria-label="author_link">Muazzam Rauf</a>
+                          <span>Oct 16, 2023</span>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="market-news ">
+                      <div class="d-flex align-items-center">
+                        <div class="feature-img">
+                          <div class="stock-post-img">
+                            <img src="https://richtv.io/wp-content/uploads/2023/10/CRWD_2023-10-16_19-24-33-150x150.png"
+                              alt="thumbnail-img">
+                          </div>
+                        </div>
+                        <div class="stock-post-content">
+                          <h4 class="lh-0 mb-0"><a href="#" aria-label="tittle">CrowdStrike (CRWD) and New Oriental
+                              Educ...</a></h4>
+                          <a class="stock-author-meta border-end border-1 border-grey" href="#"
+                            aria-label="author_link">Muazzam Rauf</a>
+                          <span>Oct 16, 2023</span>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="show-more-btn text-start border-top border-1 border-grey">
+                      <a href="#" class="btn rounded-2 d-inline-flex align-items-center btn-primary gap-3"
+                        aria-label="Dynamic chat">Dive into Analysis<span class="fs-4">
+                          ›</span></a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-lg-6 col-md-6">
+                <div class="main_section mb-40 border-grey border pb-0 chat_output">
+                  <div class="heading-summary mb-3 chat-main-common-padding border-bottom border-grey pt-2">
+                    <h3 class="fs-6 fw-bolder lh-base">LATEST FINANCIAL NEWS</h3>
+                  </div>
+
+                  <div class="market-news">
+                    <div class="d-flex">
+                      <div class="feature-img">
+                        <div class="stock-post-img">
+                          <img src="https://richtv.io/wp-content/uploads/2023/09/LYNXMPEB470KQ_L-150x150.jpg"
+                            alt="thumbnail-img">
+                        </div>
+                      </div>
+                      <div class="stock-post-content">
+                        <h4><a
+                            href="https://richtv.io/financial-news/initial-jobless-claims-unexpectedly-decline-to-216000/"
+                            aria-label="tittle">Initial jobless claims unexpectedly decl ...</a></h4>
+                        <a class="stock-author-meta" href="https://richtv.io/author/admin/"
+                          aria-label="author_link">Rich TV</a>
+                        <span>Sep 7, 2023</span>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="market-news">
+                    <div class="d-flex">
+                      <div class="feature-img">
+                        <div class="stock-post-img">
+                          <img src="https://richtv.io/wp-content/uploads/2023/09/LYNXMPEB470KQ_L-150x150.jpg"
+                            alt="thumbnail-img">
+                        </div>
+                      </div>
+                      <div class="stock-post-content">
+                        <h4><a
+                            href="https://richtv.io/financial-news/initial-jobless-claims-unexpectedly-decline-to-216000/"
+                            aria-label="tittle">Initial jobless claims unexpectedly decl ...</a></h4>
+                        <a class="stock-author-meta" href="https://richtv.io/author/admin/"
+                          aria-label="author_link">Rich TV</a>
+                        <span>Sep 7, 2023</span>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="market-news">
+                    <div class="d-flex">
+                      <div class="feature-img">
+                        <div class="stock-post-img">
+                          <img src="https://richtv.io/wp-content/uploads/2023/09/LYNXMPEB470KQ_L-150x150.jpg"
+                            alt="thumbnail-img">
+                        </div>
+                      </div>
+                      <div class="stock-post-content">
+                        <h4><a
+                            href="https://richtv.io/financial-news/initial-jobless-claims-unexpectedly-decline-to-216000/"
+                            aria-label="tittle">Initial jobless claims unexpectedly decl ...</a></h4>
+                        <a class="stock-author-meta" href="https://richtv.io/author/admin/"
+                          aria-label="author_link">Rich TV</a>
+                        <span>Sep 7, 2023</span>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="market-news">
+                    <div class="d-flex">
+                      <div class="feature-img">
+                        <div class="stock-post-img">
+                          <img src="https://richtv.io/wp-content/uploads/2023/09/LYNXMPEB470KQ_L-150x150.jpg"
+                            alt="thumbnail-img">
+                        </div>
+                      </div>
+                      <div class="stock-post-content">
+                        <h4><a
+                            href="https://richtv.io/financial-news/initial-jobless-claims-unexpectedly-decline-to-216000/"
+                            aria-label="tittle">Initial jobless claims unexpectedly decl ...</a></h4>
+                        <a class="stock-author-meta" href="https://richtv.io/author/admin/"
+                          aria-label="author_link">Rich TV</a>
+                        <span>Sep 7, 2023</span>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="market-news">
+                    <div class="d-flex">
+                      <div class="feature-img">
+                        <div class="stock-post-img">
+                          <img src="https://richtv.io/wp-content/uploads/2023/09/LYNXMPEB470KQ_L-150x150.jpg"
+                            alt="thumbnail-img">
+                        </div>
+                      </div>
+                      <div class="stock-post-content">
+                        <h4><a
+                            href="https://richtv.io/financial-news/initial-jobless-claims-unexpectedly-decline-to-216000/"
+                            aria-label="tittle">Initial jobless claims unexpectedly decl ...</a></h4>
+                        <a class="stock-author-meta" href="https://richtv.io/author/admin/"
+                          aria-label="author_link">Rich TV</a>
+                        <span>Sep 7, 2023</span>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="market-news">
+                    <div class="d-flex">
+                      <div class="feature-img">
+                        <div class="stock-post-img">
+                          <img src="https://richtv.io/wp-content/uploads/2023/09/LYNXMPEB470KQ_L-150x150.jpg"
+                            alt="thumbnail-img">
+                        </div>
+                      </div>
+                      <div class="stock-post-content">
+                        <h4><a
+                            href="https://richtv.io/financial-news/initial-jobless-claims-unexpectedly-decline-to-216000/"
+                            aria-label="tittle">Initial jobless claims unexpectedly decl ...</a></h4>
+                        <a class="stock-author-meta" href="https://richtv.io/author/admin/"
+                          aria-label="author_link">Rich TV</a>
+                        <span>Sep 7, 2023</span>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="show-more-btn text-start border-top border-1 border-grey">
+                    <a href="#" class="btn rounded-2 d-inline-flex align-items-center btn-primary gap-3"
+                      aria-label="Dynamic chat">Dive into Analysis<span class="fs-4">
+                        ›</span></a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </section>
+        </div>
+
+      </div>
+    </div>
+  </section>
+  <!-- stock html end  -->
+  <!-- Guides-section html start -->
+  <section class="Guides-section container-fluid py-80 bg-smoke">
+    <div class="container">
+      <div class="heading-summary">
+        <h2 class="icon-heading mb-4">HOW TO GUIDES</h2>
+        <!-- Carousel Multiple Items Start -->
+        <div class="guide-slider">
+          <div class="guide-content-slider d-flex">
+            <div class="guide-video-featured">
+              <img src="https://richtv.io/wp-content/uploads/2023/09/LYNXMPEB470KQ_L-150x150.jpg"
+                alt="thumbnail-img">
+            </div>
+            <div class="guide-video-bio">
+              <div class="artical-au d-flex justify-content-between">
+                <a href="https://richtv.io/author/admin/" aria-label="author name" tabindex="0">Rich TV, <span
+                    class="date">07 Sep 2023</span></a>
+              </div>
+              <h4><a href="" class="post-title-link" aria-label="tittle" tabindex="0">Initial jobless claims
+                  unexpectedly decl ... </a>
+              </h4>
+              <div class="read-more-link-artical">
+                <a href="#" class="action-link" aria-label="Read more" tabindex="0">Read More<div
+                    class="svg-icon  d-inline-block ps-1">
+                    <svg width="6" height="10" viewBox="0 0 6 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path fill-rule="evenodd" clip-rule="evenodd"
+                        d="M6 5L1.19924 10L0 8.74901L3.59962 5L6.08905e-06 1.251L1.19924 0L6 5Z" fill="#3B71FE">
+                      </path>
+                    </svg>
+                  </div></a>
+              </div>
+            </div>
+          </div>
+          <div class="guide-content-slider d-flex">
+            <div class="guide-video-featured">
+              <img src="https://richtv.io/wp-content/uploads/2023/09/LYNXMPEB470KQ_L-150x150.jpg"
+                alt="thumbnail-img">
+            </div>
+            <div class="guide-video-bio">
+              <div class="artical-au d-flex justify-content-between">
+                <a href="https://richtv.io/author/admin/" aria-label="author name" tabindex="0">Rich TV, <span
+                    class="date">07 Sep 2023</span></a>
+              </div>
+              <h4><a href="" class="post-title-link" aria-label="tittle" tabindex="0">Initial jobless claims
+                  unexpectedly decl ... </a>
+              </h4>
+              <div class="read-more-link-artical">
+                <a href="#" class="action-link" aria-label="Read more" tabindex="0">Read More<div
+                    class="svg-icon  d-inline-block ps-1">
+                    <svg width="6" height="10" viewBox="0 0 6 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path fill-rule="evenodd" clip-rule="evenodd"
+                        d="M6 5L1.19924 10L0 8.74901L3.59962 5L6.08905e-06 1.251L1.19924 0L6 5Z" fill="#3B71FE">
+                      </path>
+                    </svg>
+                  </div></a>
+              </div>
+            </div>
+          </div>
+          <div class="guide-content-slider d-flex">
+            <div class="guide-video-featured">
+              <img src="https://richtv.io/wp-content/uploads/2023/09/LYNXMPEB470KQ_L-150x150.jpg"
+                alt="thumbnail-img">
+            </div>
+            <div class="guide-video-bio">
+              <div class="artical-au d-flex justify-content-between">
+                <a href="https://richtv.io/author/admin/" aria-label="author name" tabindex="0">Rich TV, <span
+                    class="date">07 Sep 2023</span></a>
+              </div>
+              <h4><a href="" class="post-title-link" aria-label="tittle" tabindex="0">Initial jobless claims
+                  unexpectedly decl ... </a>
+              </h4>
+              <div class="read-more-link-artical">
+                <a href="#" class="action-link" aria-label="Read more" tabindex="0">Read More<div
+                    class="svg-icon  d-inline-block ps-1">
+                    <svg width="6" height="10" viewBox="0 0 6 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path fill-rule="evenodd" clip-rule="evenodd"
+                        d="M6 5L1.19924 10L0 8.74901L3.59962 5L6.08905e-06 1.251L1.19924 0L6 5Z" fill="#3B71FE">
+                      </path>
+                    </svg>
+                  </div></a>
+              </div>
+            </div>
+          </div>
+          <div class="guide-content-slider d-flex">
+            <div class="guide-video-featured">
+              <img src="https://richtv.io/wp-content/uploads/2023/09/LYNXMPEB470KQ_L-150x150.jpg"
+                alt="thumbnail-img">
+            </div>
+            <div class="guide-video-bio">
+              <div class="artical-au d-flex justify-content-between">
+                <a href="https://richtv.io/author/admin/" aria-label="author name" tabindex="0">Rich TV, <span
+                    class="date">07 Sep 2023</span></a>
+              </div>
+              <h4><a href="" class="post-title-link" aria-label="tittle" tabindex="0">Initial jobless claims
+                  unexpectedly decl ... </a>
+              </h4>
+              <div class="read-more-link-artical">
+                <a href="#" class="action-link" aria-label="Read more" tabindex="0">Read More<div
+                    class="svg-icon  d-inline-block ps-1">
+                    <svg width="6" height="10" viewBox="0 0 6 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path fill-rule="evenodd" clip-rule="evenodd"
+                        d="M6 5L1.19924 10L0 8.74901L3.59962 5L6.08905e-06 1.251L1.19924 0L6 5Z" fill="#3B71FE">
+                      </path>
+                    </svg>
+                  </div></a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- Carousel Multiple Items End -->
+      </div>
+    </div>
+  </section>
+  <!-- Guides-section html start -->
+  <!-- testimonial-section start -->
+  <section class="testimonial-section container-fluid py-80 bg-smoke">
+    <div class="container">
+      <div class="main-heading-help text-center">
+        <h2 class="text-uppercase text-center">Recommended by Traders Worldwide</h2>
+        <div class="border-heading d-inline-block my-4"></div>
+        <p class="mt-3 mb-5">Rich TV continuously serves a source of support and empowerment for traders
+          around the globe, as it is evident from their feedback.</p>
+      </div>
+      <div class="testimonial-slider">
+        <div class="testimonial-card m-auto d-block m-auto">
+          <div class="d-flex justify-content-between align-items-center mb-4">
+            <div>
+              <img src="https://s3.wasabisys.com/rpdapp1/upload/photos/2023/img/testimonial-avatar.webp"
+                class="review-avatar border border-1 border-primary rounded-circle h-auto" alt="testimonial_img">
+            </div>
+            <div>
+              <img src="https://s3.wasabisys.com/rpdapp1/upload/photos/2023/img/testimonial-logo.png"
+                alt="testimonial_img">
+            </div>
+          </div>
+          <h3 class="text-uppercase">Jeffrey Lutz</h3>
+          <span class="mb-3 d-inline-block">United States</span>
+          <p>This is the best trading club in the world. Finding companies early, and winning. Rich Tv
+            changed my life.</p>
+        </div>
+        <div class="testimonial-card m-auto d-block m-auto">
+          <div class="d-flex justify-content-between align-items-center mb-4">
+            <div>
+              <img src="https://s3.wasabisys.com/rpdapp1/upload/photos/2023/img/testimonial-avatar.webp"
+                class="review-avatar border border-1 border-primary rounded-circle h-auto" alt="testimonial_img">
+            </div>
+            <div>
+              <img src="https://s3.wasabisys.com/rpdapp1/upload/photos/2023/img/testimonial-logo.png"
+                alt="testimonial_img">
+            </div>
+          </div>
+          <h3 class="text-uppercase">Miro</h3>
+          <span class="mb-3 d-inline-block">United Kingdom</span>
+          <p>Great place to get educated about stocks, shares and cryptocurrencies. Support of the
+            team behind and community is what you need. Picks of great companies, due diligence and
+            help from others is what you get here.</p>
+        </div>
+        <div class="testimonial-card m-auto d-block m-auto">
+          <div class="d-flex justify-content-between align-items-center mb-4">
+            <div>
+              <img src="https://s3.wasabisys.com/rpdapp1/upload/photos/2023/img/testimonial-avatar.webp"
+                class="review-avatar border border-1 border-primary rounded-circle h-auto" alt="testimonial_img">
+            </div>
+            <div>
+              <img src="https://s3.wasabisys.com/rpdapp1/upload/photos/2023/img/testimonial-logo.png"
+                alt="testimonial_img">
+            </div>
+          </div>
+          <h3 class="text-uppercase">Daniel Stewart</h3>
+          <span class="mb-3 d-inline-block">Canada</span>
+          <p>Great people. Great teamwork. Never would be winning without Rich and all the people
+            here.</p>
+        </div>
+        <div class="testimonial-card m-auto d-block m-auto">
+          <div class="d-flex justify-content-between align-items-center mb-4">
+            <div>
+              <img src="https://s3.wasabisys.com/rpdapp1/upload/photos/2023/img/testimonial-female-avatar.webp"
+                class="review-avatar border border-1 border-primary rounded-circle h-auto" alt="testimonial_img">
+            </div>
+            <div>
+              <img src="https://s3.wasabisys.com/rpdapp1/upload/photos/2023/img/testimonial-logo.png"
+                alt="testimonial_img">
+            </div>
+          </div>
+          <h3 class="text-uppercase">Amanda</h3>
+          <span class="mb-3 d-inline-block">Indonesia</span>
+          <p>Eternally grateful for the Rich Tv club. The education, support, and endless winning
+            picks is something no other trading club offers. Hands down the most amazing community
+            of traders! Blessed.</p>
+        </div>
+        <div class="testimonial-card m-auto d-block m-auto">
+          <div class="d-flex justify-content-between align-items-center mb-4">
+            <div>
+              <img src="https://s3.wasabisys.com/rpdapp1/upload/photos/2023/img/testimonial-avatar.webp"
+                class="review-avatar border border-1 border-primary rounded-circle h-auto" alt="testimonial_img">
+            </div>
+            <div>
+              <img src="https://s3.wasabisys.com/rpdapp1/upload/photos/2023/img/testimonial-logo.png"
+                alt="testimonial_img">
+            </div>
+          </div>
+          <h3 class="text-uppercase">Wael Gabr</h3>
+          <span class="mb-3 d-inline-block">Canada</span>
+          <p>If you want to make money, join Rich Tv. I made almost 80% in the 1st two months joining.
+            You won’t regret it.</p>
+        </div>
+        <div class="testimonial-card m-auto d-block m-auto">
+          <div class="d-flex justify-content-between align-items-center mb-4">
+            <div>
+              <img src="https://s3.wasabisys.com/rpdapp1/upload/photos/2023/img/testimonial-avatar.webp"
+                class="review-avatar border border-1 border-primary rounded-circle h-auto" alt="testimonial_img">
+            </div>
+            <div>
+              <img src="https://s3.wasabisys.com/rpdapp1/upload/photos/2023/img/testimonial-logo.png"
+                alt="testimonial_img">
+            </div>
+          </div>
+          <h3 class="text-uppercase">Joshua Durden</h3>
+          <span class="mb-3 d-inline-block">Canada</span>
+          <p>The support, knowledge and positivity in the group is beyond anything I have ever been a
+            part of.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- testimonial-section end -->
+  <!-- Newsletter html start  -->
+  <section class="newsletter container-fluid py-80">
+    <div class="container text-center">
+      <h2 class="text-uppercase fs-2">Sign up for our free newsletter</h2>
+      <div class="border-heading d-inline-block my-4"></div>
+      <p class="fs-24 mt-1">Simply drop in your email address to never miss an update from Rich TV.</p>
+      <div class="w-75 m-auto">
+        <form class="mt-4">
+          <div class="form-group d-flex flex-wrap  gap-3">
+            <div class="flex-fill">
+              <input type="email" class="form-control form-control-lg px-3 py-3 me-3 fs-6 newsletter-input border"
+                id="exampleFormControlInput1" placeholder="Enter your Email">
+            </div>
+            <div>
+              <button class="btn btn-primary fw-5 newsletter-btn h-100">Submit</button>
+            </div>
+          </div>
+          <div class="d-flex gap-2 align-items-center mt-1">
+            <input class="form-checkboxgrp-checkbox" name="home_form_check" type="checkbox" value="0" required="true">
+            <label for="home_form_check" class="fs-6 text-start m-0">I agree to receive newsletter and
+              email alerts.</label>
+          </div>
+        </form>
+      </div>
+    </div>
+  </section>
+  <!-- Newsletter html end  -->
+  <!-- pre Footer  -->
+  <section class="pre-footer container-fluid py-80 bg-smoke">
+    <div class="container pb-120">
+      <div class="row">
+        <div class="col-12">
+          <div class="risk-disclaimer p-4">
+            <div class="risk-heading">
+              <div class="disclaimer-icon-name d-flex align-items-end mb-4 gap-3">
+                <div class="">
+                  <img src="https://s3.wasabisys.com/rpdapp1/upload/photos/2023/img/alert-icon.png" alt="icon">
+                </div>
+                <div>
+                  <h2 class="fw-bolder fs-1 mb-0">Risk Disclaimer</h2>
+                </div>
+              </div>
+              <div>
+                <div class="risk-para">
+                  <p class="margin-24 fs-18 lh-base">Rich TV's company profiles and other investor relations materials,
+                    publications or presentations, including web content, are based on data obtained
+                    from sources we believe to be reliable but are not guaranteed as to accuracy and are
+                    not purported to be complete. As such, the information should not be construed as
+                    advice designed to meet the particular investment needs of any investor. Any
+                    opinions expressed in Rich TV reports, company profiles, or other investor relations
+                    materials and presentations are subject to change. Rich TV and its affiliates may
+                    buy and sell shares of securities or options of the issuers mentioned on this
+                    website at any time. <a class="arrow-down show-more cursor-pointer" rel="nofollow" aria-label="See All"> See
+                      more</a></p>
+                </div>
+                <div class="slide-up-down">
+                  <p style="display: none;">Stock market investing is inherently risky. Rich TV is not
+                    responsible for any gains or losses that result from the opinions expressed on this
+                    website, in its research reports, company profiles or in other investor relations
+                    materials or presentations that it publishes electronically or in print.
+                    We strongly encourage all investors to conduct their own research before making any
+                    investment decision. For more information on stock market investing, visit the
+                    Securities and Exchange Commission ("SEC") at www.sec.gov. <a class="arrow-down show-less cursor-pointer"
+                      rel="nofollow" aria-label="See less"> See less</a>
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- pre Footer End -->
+  <!-- footer html start  -->
+  <footer class="main-foot text-white">
+    <section class="main-footer container-fluid">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-4 col-md-6 ">
+            <div class="footer-logo">
+              <img src="https://s3.wasabisys.com/rpdapp1/upload/photos/2023/img/logo.png" alt="Footer logo">
+            </div>
+            <div class="footer-para">
+              <p class="mt-3">
+                Trading data in widgets
+                displayed with a 15-minute
+                delay. Prices available on stock
+                page updated in real time.
+                Market &amp; fundamental data
+                appearing on Rich Tv
+                sourced from various 3rd party
+                data providers.
+              </p>
+            </div>
+          </div>
+          <div class="col-6 col-lg-2 col-md-6 mt-mobile">
+            <div class="footer-heading">
+              <h2 class="mb-3">Rich Tv</h2>
+            </div>
+            <div class="footer-links">
+              <div class="menu-footer-navigation-one-container">
+                <ul id="menu-footer-navigation-one" class="menu  list-unstyled">
+                  <li class="pb-3"><a href="/about-us/" aria-label="about us">About Us</a></li>
+                  <li class="pb-3"><a href="/pricing">Pricing and Plans </a></li>
+                  <li class="pb-3"><a href="/affiliate-center" aria-label="Affiliate program">Affiliate Program</a></li>
+                  <li class="pb-3"><a href="/contact" aria-label="contact us">Contact us</a></li>
+                  <li class="pb-3"><a href="/register" aria-label="Join club">Join the Club</a></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div class="col-6 col-lg-2 col-md-6 mt-mobile">
+            <div class="footer-heading">
+              <h2 class="mb-3"> Learning</h2>
+            </div>
+            <div class="footer-links">
+              <div class="menu-footer-navigation-two-container">
+                <ul id="menu-footer-navigation-two" class="menu list-unstyled">
+                  <li class="pb-3"><a href="/rich-picks/" aria-label="Rich picks">Rich Picks</a></li>
+                  <li class="pb-3"><a href="/penny-stocks/" aria-label="penny stock">Penny Stocks</a></li>
+                  <li class="pb-3"><a href="/news/" aria-label="News">News</a></li>
+                  <li class="pb-3"><a href="/ceo-interviews/" aria-label="Ceo">CEO Interviews</a></li>
+                  <li class="pb-3"><a href="/trading-school/" aria-label="trading school">Trading School</a></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-6 mt-mobile">
+            <div class="footer-contact-us footer-heading">
+              <h2 class="mb-3">Get Latest Stock Pick Alerts</h2>
+            </div>
+            <div class="footer-searchbar mb-3 position-relative">
+              <form id="f_contactform" method="post" action="" class="footeremlcollector">
+                <input type="email" placeholder="Enter your email" class="footer-serch" name="f_email" id="f_email"
+                  fdprocessedid="31it58">
+                <input type="text" id="hiddenspm-footer1" class="mauticform-input" style="display:none;">
+                <button class="position-absolute btn-primary" type="submit" id="sub_footer"
+                  aria-label="Newsletter Button" fdprocessedid="d97vyg">
+                  <div class=" d-inline-block">
+                    <i class="bi bi-arrow-right fw-6"></i>
+                  </div>
+                </button>
+              </form>
+              <div class="err" id="err-f_email" style="display: none;"></div>
+              <div class="formsubmission" id="f_formsubmission">
+                <p class="formsubmission-text"></p>
+              </div>
+            </div>
+            <div class="email mb-2">
+              <a href="mailto:support@richtv.io" class="d-flex gap-3 align-items-center" aria-label="email"
+                target="_blank" rel="nofollow">
+                <div class="d-inline-block fs-18"> <i class="bi bi-envelope"></i></div>
+                support@richtv.io
+              </a>
+            </div>
+            <div class="footer-num email mb-4">
+              <a href="tel:778-237-2402" target="_blank" class="d-flex gap-3 align-items-center" aria-label="Phone"
+                rel="nofollow">
+                <div class="d-inline-block fs-18"><i class="bi bi-telephone"></i></div>
+                778-237-2402
+              </a>
+            </div>
+            <div class="footer-icons d-flex gap-4">
+              <a href="https://www.facebook.com/richtv.io" class="fs-18" target="_blank" aria-label="Facebook"
+                rel="nofollow">
+                <i class="bi bi-facebook"></i>
+              </a>
+              <a href="https://www.youtube.com/c/RICHTVLIVE" class="fs-18" target="_blank" aria-label="Youtube"
+                rel="nofollow">
+                <i class="bi bi-youtube"></i>
+              </a>
+              <a href="https://www.instagram.com/richtv.io/" class="fs-18" target="_blank" aria-label="Instagram"
+                rel="nofollow">
+                <i class="bi bi-instagram"></i>
+              </a>
+              <a href="https://twitter.com/richtv_io" class="fs-18" target="_blank" aria-label="Twitter" rel="nofollow">
+                <i class="bi bi-twitter"></i>
+              </a>
+              <a href="https://linkedin.com/company/richtv-io" class="fs-18" target="_blank" aria-label="Linkdin"
+                rel="nofollow">
+                <i class="bi bi-linkedin"></i>
+              </a>
+              <a href="https://www.tiktok.com/@richtv.io" target="_blank" class="fs-18" aria-label="Tiktok"
+                rel="nofollow">
+                <i class="bi bi-tiktok"></i>
+              </a>
+            </div>
+          </div>
+          <div class="col-12 footer-bootem d-flex py-4 mt-5 border-top ">
+            <p class="mb-0 ">Copyright © 2023 Rich Tv. All rights reserved</p>
+            <div class="">
+              <a href="/privacy-policy" class="policy-page px-2 mx-2 border-end border-start"
+                aria-label="Privacy Policy">Privacy Policy</a><a href="/terms-of-use" aria-label="Terms">Terms
+                of Use</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </footer>
+  <!-- footer html end  -->
+  
+  <!-- JS Files -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+    crossorigin="anonymous"></script>
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"
+    integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+  <script src="./assets/js/slick.min.js"></script>
+  <script src="./assets/js/custom.js"></script>
+</body>
+
+</html>
