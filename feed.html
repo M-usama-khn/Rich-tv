@@ -2,40 +2,280 @@
 <html lang="en">
 
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Rich TV</title>
   <link rel="preconnect" href="https://fonts.googleapis.com" as="font">
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700&amp;display=swap" rel="stylesheet"
     as="font">
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
     integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+  <link rel="stylesheet" href="./assets/CSS/slick.css">
+  <link rel="stylesheet" href="./assets/CSS/slick-theme.css">
   <link rel="stylesheet" href="./assets/CSS/style.css">
-  <title>Feed</title>
 </head>
 
 <body>
-  <section class="feed-main container-fluid pt-4">
+  <header class="container-fluid position-fixed main-header px-5">
+    <div class="">
+      <div class="nav-main">
+        <nav class="navbar  bg-transparent py-3">
+          <div class="container-fluid p-0">
+            <div class="site-logo">
+              <a href="index.html" title="Rich TV" rel="home" aria-label="Rich Tv logo">
+                <img class="header-image is-logo-image" alt="Rich TV" src="https://s3.wasabisys.com/rpdapp1/upload/photos/2023/img/logo.svg" title="Rich TV">
+              </a>
+            </div>
+            <button class="navbar-toggler d-block d-xl-none" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasDarkNavbar" aria-controls="offcanvasDarkNavbar">
+              <i class="bi bi-list fs-2 fw-bolder nav-clr"></i>
+            </button>
+            <div class="dextop-nav d-none d-xl-block">
+              <div class="main-menu-container d-flex gap-4 align-items-center">
+                <ul class="main-list mb-0">
+                  <li>
+                    <div class="dropdown">
+                      <button class="nav-link dropdown-toggle d-flex nav-clr fs-16 fw-bolder" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                        All Pages
+                      </button>
+                      <ul class="dropdown-menu px-4 py-3 mega-menu gap-4 rounded-3">
+                        <li>
+                          <h4>Main Pages</h4>
+                          <ul>
+                            <li><a class="dropdown-item nav-link" href="feed.html">Feed Page</a></li>
+                            <li><a class="dropdown-item nav-link" href="profile.html">Profile Page</a></li>
+                            <li><a class="dropdown-item nav-link" href="setting.html">Setting Page</a></li>
+                            <li><a class="dropdown-item nav-link" href="groups-chats.html">Groups & Chat Page</a></li>
+                            <li><a class="dropdown-item nav-link" href="chat-single.html">Chat Single Page</a></li>
+                            <li><a class="dropdown-item nav-link" href="single-stock.html">Single Stock Page</a></li>
+                          </ul>
+                        </li>
+                        <li>
+                          <h4>Exam & Watchlist</h4>
+                          <ul>
+                            <li><a class="dropdown-item nav-link" href="exam.html">EXAMS Page</a></li>
+                            <li><a class="dropdown-item nav-link" href="exam-queries.html">Exam Queries Page</a></li>
+                            <li><a class="dropdown-item nav-link" href="exam-result.html">Exam Result Page</a></li>
+                            <li><a class="dropdown-item nav-link" href="watchlist.html">Watchlist Page</a></li>
+                            <li><a class="dropdown-item nav-link" href="manageWatchlist.html">ManageWatchlist Page</a></li>
+                            <li><a class="dropdown-item nav-link" href="createwatchlist.html">Createwatchlist Page</a></li>
+                            <li><a class="dropdown-item nav-link" href="widgets.html">All Widgets</a></li>
+                          </ul>
+                        </li>
+                        <li>
+                          <h4>Other Pages</h4>
+                          <ul>
+                            <li><a class="dropdown-item nav-link" href="trading-school.html">Trading School</a></li>
+                            <li><a class="dropdown-item nav-link" href="singlepage.html"> Post Single Page</a></li>
+                            <li><a class="dropdown-item nav-link" href="ceo-interviews.html">CEO Interviews Page</a></li>
+                            <li><a class="dropdown-item nav-link" href="ceo-single.html">CEO Interviews Single</a></li>
+                          </ul>
+                        </li>
+                        <li>
+                          <h4>STOCK QUOTES</h4>
+                          <ul>
+                            <li><a class="dropdown-item nav-link" href="earning-calender.html">Earning Calender</a></li>
+                            <li><a class="dropdown-item nav-link" href="economic-calender.html">Economic Calender</a></li>
+                            <li><a class="dropdown-item nav-link" href="single-stock.html">Stocks</a></li>
+                            <li><a class="dropdown-item nav-link" href="javascript:void(0)">Cryptocurrency</a></li>
+                          </ul>
+                        </li>
+                      </ul>
+                    </div>
+                  </li>
+                  <li>
+                    <div class="dropdown">
+                      <button class="nav-link dropdown-toggle d-flex nav-clr fs-16 fw-bolder" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                        FINANCIAL NEWS
+                      </button>
+                      <ul class="dropdown-menu px-4 py-3">
+                        <li><a class="dropdown-item nav-link" href="javascript:void(0)">Press Release</a></li>
+                        <li><a class="dropdown-item nav-link" href="javascript:void(0)">Market Analysis</a></li>
+                        <li><a class="dropdown-item nav-link" href="javascript:void(0)">Investing</a></li>
+                        <li><a class="dropdown-item nav-link" href="javascript:void(0)">Stocks</a></li>
+                        <li><a class="dropdown-item nav-link" href="javascript:void(0)">Cryptocurrency</a></li>
+                      </ul>
+                    </div>
+                  </li>
+                  
+                  <li>
+                    <div class="dropdown">
+                      <button class="nav-link dropdown-toggle d-flex nav-clr fs-16 fw-bolder" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                        RESOURCES
+                      </button>
+                      <ul class="dropdown-menu px-4 py-3 mega-menu gap-4 rounded-3">
+                        <li>
+                          <h4>SOURCE</h4>
+                          <ul>
+                            <li><a class="dropdown-item nav-link" href="javascript:void(0)">RICH TV PICKS</a></li>
+                            <li><a class="dropdown-item nav-link" href="javascript:void(0)">WATCHLIST</a></li>
+                            <li><a class="dropdown-item nav-link" href="javascript:void(0)">Email and Alerts</a></li>
+                            <li><a class="dropdown-item nav-link" href="javascript:void(0)">CHAT ROOM</a></li>
+                          </ul>
+                        </li>
+                        <li>
+                          <h4>CALENDARS</h4>
+                          <ul>
+                            <li><a class="dropdown-item nav-link" href="javascript:void(0)">Economic Calendar</a></li>
+                            <li><a class="dropdown-item nav-link" href="javascript:void(0)">Earning Calendar</a></li>
+                            <li><a class="dropdown-item nav-link" href="javascript:void(0)">SCREENER</a></li>
+                          </ul>
+                        </li>
+                      </ul>
+                    </div>
+                  </li>
+                  <li>
+                    <a href="" class="nav-link nav-clr fw-bolder">CEO INTERVIEWS</a>
+                  </li>
+                </ul>
+                <div class="header_login d-flex gap-4 justify-content-end">
+                  <a href="welcome" class="d-flex gap-2 fs-16 fw-bolder nav-clr" aria-label="login"><i class="bi bi-box-arrow-in-right"></i>LOG IN</a>
+                  <a href="register" class="d-flex gap-2 nav-clr fs-16 fw-bolder" aria-label="signup"><i class="bi bi-person-fill"></i>SIGN UP</a>
+                </div>
+                <div class="search-main">
+                  <button class="bg-transparent border-0 search-btn fs-3 nav-clr" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasTop" aria-controls="offcanvasTop">
+                    <i class="bi bi-search"></i>
+                  </button>
+  
+                  <div class="offcanvas offcanvas-top bg-transparent canvas-header border-0" tabindex="-1" id="offcanvasTop" aria-labelledby="offcanvasTopLabel">
+                    <div class="offcanvas-header justify-content-end">
+                      <button type="button" class="btn-close btn-search-close btn-close-white" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                    </div>
+                    <div class="offcanvas-body container">
+                      <form class="d-flex nav-search-main nav-link popup-form position-relative" action="https://richtv.io/" method="get" id="search_form_large" style="flex-grow: 1;">
+                        <span class="header-serch-icon position-absolute "> <i class="bi bi-search nav-clr fs-4"></i></span>
+                        <div class="navbar-search w-100">
+                          <input class="navbar-search w-100 border-0" type="search" placeholder="Search Markets and Groups">
+                        </div>
+                      </form>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="offcanvas offcanvas-end text-bg-white" tabindex="-1" id="offcanvasDarkNavbar" aria-labelledby="offcanvasDarkNavbarLabel">
+              <div class="offcanvas-header">
+                <div class="site-logo">
+                  <a href="" title="Rich TV" rel="home" aria-label="Rich Tv logo">
+                    <img class="header-image is-logo-image" alt="Rich TV" src="https://s3.wasabisys.com/rpdapp1/upload/photos/2023/img/logo.svg" title="Rich TV">
+                  </a>
+                </div>
+                <button type="button" class="btn-close btn-close-black" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+              </div>
+              <div class="offcanvas-body">
+                <div class="main-menu-container ">
+                  <ul class="main-list mb-0 flex-column p-0">
+                    <li>
+                      <div class="dropdown">
+                        <button class="nav-link dropdown-toggle d-flex nav-clr fs-16 fw-bolder" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                          All Pages
+                        </button>
+                        <ul class="dropdown-menu px-2 py-1 mega-menu gap-4 rounded-3">
+                          <li>
+                            <h4>Main Pages</h4>
+                            <ul>
+                              <li><a class="dropdown-item nav-link" href="feed.html">Feed Page</a></li>
+                              <li><a class="dropdown-item nav-link" href="profile.html">Profile Page</a></li>
+                              <li><a class="dropdown-item nav-link" href="setting.html">Setting Page</a></li>
+                              <li><a class="dropdown-item nav-link" href="groups-chats.html">Groups & Chat Page</a></li>
+                              <li><a class="dropdown-item nav-link" href="chat-single.html">Chat Single Page</a></li>
+                              <li><a class="dropdown-item nav-link" href="single-stock.html">Single Stock Page</a></li>
+                            </ul>
+                          </li>
+                          <li>
+                            <h4>Exam & Watchlist</h4>
+                            <ul>
+                              <li><a class="dropdown-item nav-link" href="exam.html">EXAMS Page</a></li>
+                              <li><a class="dropdown-item nav-link" href="exam-queries.html">Exam Queries Page</a></li>
+                              <li><a class="dropdown-item nav-link" href="exam-result.html">Exam Result Page</a></li>
+                              <li><a class="dropdown-item nav-link" href="watchlist.html">Watchlist Page</a></li>
+                              <li><a class="dropdown-item nav-link" href="manageWatchlist.html">ManageWatchlist Page</a></li>
+                              <li><a class="dropdown-item nav-link" href="createwatchlist.html">Createwatchlist Page</a></li>
+                              <li><a class="dropdown-item nav-link" href="widgets.html">All Widgets</a></li>
+                            </ul>
+                          </li>
+                          <li>
+                            <h4>Other Pages</h4>
+                            <ul>
+                              <li><a class="dropdown-item nav-link" href="trading-school.html">Trading School</a></li>
+                              <li><a class="dropdown-item nav-link" href="singlepage.html"> Post Single Page</a></li>
+                              <li><a class="dropdown-item nav-link" href="ceo-interviews.html">CEO Interviews Page</a></li>
+                              <li><a class="dropdown-item nav-link" href="ceo-single.html">CEO Interviews Single</a></li>
+                            </ul>
+                          </li>
+                          <li>
+                            <h4>STOCK QUOTES</h4>
+                            <ul>
+                              <li><a class="dropdown-item nav-link" href="earning-calender.html">Earning Calender</a></li>
+                              <li><a class="dropdown-item nav-link" href="economic-calender.html">Economic Calender</a></li>
+                              <li><a class="dropdown-item nav-link" href="single-stock.html">Stocks</a></li>
+                              <li><a class="dropdown-item nav-link" href="javascript:void(0)">Cryptocurrency</a></li>
+                            </ul>
+                          </li>
+                        </ul>
+                      </div>
+                    </li>
+                    <li>
+                      <div class="dropdown">
+                        <button class="nav-link dropdown-toggle d-flex nav-clr fs-16 fw-bolder" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                          FINANCIAL NEWS
+                        </button>
+                        <ul class="dropdown-menu px-2 py-1">
+                          <li><a class="dropdown-item nav-link" href="javascript:void(0)">Press Release</a></li>
+                          <li><a class="dropdown-item nav-link" href="javascript:void(0)">Market Analysis</a></li>
+                          <li><a class="dropdown-item nav-link" href="javascript:void(0)">Investing</a></li>
+                          <li><a class="dropdown-item nav-link" href="javascript:void(0)">Stocks</a></li>
+                          <li><a class="dropdown-item nav-link" href="javascript:void(0)">Cryptocurrency</a></li>
+                        </ul>
+                      </div>
+                    </li>
+                    
+                    <li>
+                      <div class="dropdown">
+                        <button class="nav-link dropdown-toggle d-flex nav-clr fs-16 fw-bolder" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                          RESOURCES
+                        </button>
+                        <ul class="dropdown-menu px-2 py-1 mega-menu gap-4 rounded-3">
+                          <li>
+                            <h4>SOURCE</h4>
+                            <ul>
+                              <li><a class="dropdown-item nav-link" href="javascript:void(0)">RICH TV PICKS</a></li>
+                              <li><a class="dropdown-item nav-link" href="javascript:void(0)">WATCHLIST</a></li>
+                              <li><a class="dropdown-item nav-link" href="javascript:void(0)">Email and Alerts</a></li>
+                              <li><a class="dropdown-item nav-link" href="javascript:void(0)">CHAT ROOM</a></li>
+                            </ul>
+                          </li>
+                          <li>
+                            <h4>CALENDARS</h4>
+                            <ul>
+                              <li><a class="dropdown-item nav-link" href="javascript:void(0)">Economic Calendar</a></li>
+                              <li><a class="dropdown-item nav-link" href="javascript:void(0)">Earning Calendar</a></li>
+                              <li><a class="dropdown-item nav-link" href="javascript:void(0)">SCREENER</a></li>
+                            </ul>
+                          </li>
+                        </ul>
+                      </div>
+                    </li>
+                    <li>
+                      <a href="" class="nav-link nav-clr fw-bolder">CEO INTERVIEWS</a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+        </nav>
+      </div>
+    </div>
+  </header>
+  <div id="focus-overlay" onclick="hideoverlay()"></div>
+  <section class="feed-main container-fluid pt-80 mt-5">
     <div class="container">
       <div class="row">
         <div class="col-lg-8">
           <section class="feed-main">
-            <div class="user-status-home wow_home_stories">
-              <ul class="status-list list-unstyled d-flex">
-                <li class="create_new position-relative">
-                  <a href="/status/create/"
-                    style="background-image: url(https://s3.wasabisys.com/rpdapp1/upload/photos/2023/04/OunEMElBroAedJnBzMIT_27_b4b1f85c9ae27dbb1137390df78b23ba_avatar.png?cache=0);"
-                    class="position-relative d-block">
-                  </a>
-                  <a href="/status/create/" title="Create new story "
-                    class="bg-white rounded-circle plus-icon-feed d-flex justify-content-center align-items-center position-absolute text-black"><i
-                      class="bi bi-plus-lg"></i></a>
-                </li>
-              </ul>
-            </div>
-
-            <form action="">
-              <div class="user-post-panel shadow-sm rounded">
+            <form action="" class="publisher-box" onclick="feedoverlay()">
+              <div class="user-post-panel shadow rounded bg-white" id="user-post-panel">
                 <div class="user-post-textarea ps-2 pt-2 pe-2 d-flex justify-content-between align-items-center">
                   <div class="d-flex align-items-center gap-2">
                     <div>
@@ -51,84 +291,81 @@
                   </div>
                 </div>
                 <div class="user-post-text">
-                  <textarea name="" id="" placeholder="What's going on? #Hashtag.. @Mention.. Link.." rows="3"
-                    class="border-0 w-100" class="fs-12 fs-md-16"></textarea>
+                  <textarea name="" id="feed-textarea" placeholder="What's going on? #Hashtag.. @Mention.. Link.."
+                    rows="3" class="border-0 w-100" class="fs-12 fs-md-16"></textarea>
                 </div>
-                <div class="border-bottom ms-3 me-3"></div>
-                <div class="user-poster-button d-flex align-items-center pt-2 pb-2 gap-2 ms-2 me-2">
-                  <div>
-                    <span
-                      class="btn-file img d-flex justify-content-center align-items-center position-relative gap-2 bg-light-grey fs-14 fw-4 rounded-pill">
-                      <i class="bi bi-image-fill fs-18" style="color:#4db3f6;"></i> Upload
-                      Images <input type="file" class="position-absolute border-0" id="publisher-photos"
-                        accept="image/x-png, image/gif, image/jpeg" name="postPhotos[]" multiple="multiple">
-                    </span>
-                  </div>
-                  <div>
-                    <span
-                      class=" btn-file poll-form pol d-flex justify-content-center align-items-center position-relative gap-2 bg-light-grey fs-14 fw-4 rounded-pill">
-                      <svg xmlns="http://www.w3.org/2000/svg" width="24" height="22" viewBox="0 0 24 24">
-                        <path fill="#31a38c"
-                          d="M17,17H15V13H17M13,17H11V7H13M9,17H7V10H9M19,3H5C3.89,3 3,3.89 3,5V19A2,2 0 0,0 5,21H19A2,2 0 0,0 21,19V5C21,3.89 20.1,3 19,3Z">
-                        </path>
-                      </svg> Create Poll </span>
-                  </div>
-                  <div>
-                    <span
-                      class=" btn-file vid d-flex justify-content-center align-items-center position-relative gap-2 bg-light-grey fs-14 fw-4 rounded-pill">
-                      <i class="bi bi-camera-video-fill" style="color: #71a257;"></i> Upload
-                      Video <input type="file" class="position-absolute border-0" id="publisher-video" name="postVideo"
-                        accept="*/*">
-                    </span>
-                  </div>
-                  <div>
-                    <span
-                      class="btn-file mor d-flex justify-content-center align-items-center position-relative gap-2 bg-light-grey fs-14 fw-4 rounded-pill">
-                      <i class="bi bi-plus-circle-fill fs-18"></i> <span>More</span>
-                    </span>
-                  </div>
-                </div>
-                <div class="user-publisher-box-footer pt-3 pb-2 border-bottom">
-                  <div class="d-flex align-items-center justify-content-around pt-2 pb-2 gap-2 ms-2 me-2">
-                    <div class="text-center fs-16 fw-6 align-self-baseline">
-                      <span
-                        class="m-auto btn-file poll-form pol d-flex justify-content-center align-items-center user-top-bar bg-light-grey fs-14 fw-4 rounded-circle p-4 mb-2">
-                        <span><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" class="feather"
-                            viewBox="0 0 24 24">
-                            <path fill="currentColor"
-                              d="M10,2H14A2,2 0 0,1 16,4V6H20A2,2 0 0,1 22,8V19A2,2 0 0,1 20,21H4C2.89,21 2,20.1 2,19V8C2,6.89 2.89,6 4,6H8V4C8,2.89 8.89,2 10,2M14,6V4H10V6H14Z">
+                <div class="border-top border-bottom p-2">
+                  <div id="user-poster-con">
+                    <div class="user-poster-button d-flex align-items-center gap-3">
+                      <div>
+                        <span
+                          class="btn-file img d-flex justify-content-center align-items-center position-relative gap-2 bg-light-grey fs-14 fw-4 rounded-pill">
+                          <i class="bi bi-image-fill fs-18" style="color:#4db3f6;"></i> Upload
+                          Image <input type="file" class="position-absolute border-0" id="publisher-photos"
+                            name="postPhotos[]" multiple="multiple">
+                        </span>
+                      </div>
+                      <div>
+                        <span
+                          class=" btn-file poll-form pol d-flex justify-content-center align-items-center position-relative gap-2 bg-light-grey fs-14 fw-4 rounded-pill">
+                          <svg xmlns="http://www.w3.org/2000/svg" width="24" height="22" viewBox="0 0 24 24">
+                            <path fill="#31a38c"
+                              d="M17,17H15V13H17M13,17H11V7H13M9,17H7V10H9M19,3H5C3.89,3 3,3.89 3,5V19A2,2 0 0,0 5,21H19A2,2 0 0,0 21,19V5C21,3.89 20.1,3 19,3Z">
                             </path>
-                          </svg></span> </span>
-                      GIF
-                    </div>
-                    <div class="text-center fs-16 fw-6 align-self-baseline">
-                      <span
-                        class="m-auto btn-file poll-form pol d-flex justify-content-center align-items-center user-top-bar  bg-light-grey fs-14 fw-4 rounded-circle p-4  mb-2">
-                        <i class="bi bi-emoji-smile fs-4" style="color: #f3c038"></i>
-                      </span>
-                      <span>Feelings</span>
-                    </div>
-                    <div class="fs-16 fw-6 align-self-baseline">
-                      <span
-                        class="m-auto btn-file img d-flex justify-content-center align-items-center user-top-bar position-relative gap-2 bg-light-grey fs-14 fw-4 rounded-circle mb-2 p-4">
-                        <i class="bi bi-file-earmark-richtext fs-18" style="color:#6bcfef;"></i> <input type="file"
-                          class="position-absolute border-0 w-100" id="publisher-photos"
-                          accept="image/x-png, image/gif, image/jpeg" name="postPhotos[]" multiple="multiple">
-                      </span>
-                      <span>Upload
-                        File</span>
-                    </div>
-                    <div class="text-center fs-16 fw-6 align-self-baseline">
-                      <span
-                        class="m-auto btn-file poll-form pol d-flex justify-content-center align-items-center  user-top-bar bg-light-grey fs-14 fw-4 rounded-circle p-4 mb-2">
-                        <i class="bi bi-palette-fill fs-18" style="color: #673ab7;"></i>
-                      </span>
-                      Color
+                          </svg> Create Poll </span>
+                      </div>
+                      <div>
+                        <span
+                          class=" btn-file vid d-flex justify-content-center align-items-center position-relative gap-2 bg-light-grey fs-14 fw-4 rounded-pill">
+                          <i class="bi bi-file-earmark-richtext fs-18" style="color:#6bcfef;"></i> Upload
+                          file <input type="file" class="position-absolute border-0" id="publisher-video"
+                            name="postfile">
+                        </span>
+                      </div>
+                      <div>
+                        <span
+                          class="btn-file mor d-flex justify-content-center align-items-center position-relative gap-2 bg-light-grey fs-14 fw-4 rounded-pill"
+                          onclick="showColor()">
+                          <i class="bi bi-palette-fill fs-18" style="color: #673ab7;"></i> Color</span>
+                        </span>
+                      </div>
                     </div>
                   </div>
+                  <div id="user-color-con" class="d-none position-relative">
+                    <div class="d-flex justify-content-between align-items-center user-poster-button color-wrapper">
+                      <div class="d-flex gap-2">
+                        <div>
+                          <div class="all_colors_style"
+                            style="background-image: linear-gradient(45deg, #8d2de2 0%, #4a00e0 100%);"></div>
+                        </div>
+                        <div class="all_colors_style"
+                          style="background-image: linear-gradient(45deg, #ff416c 0%, #ff4b2b 100%);"></div>
+                        <div class="all_colors_style"
+                          style="background-image: linear-gradient(45deg, #ffe000 0%, #799f0c 100%);"></div>
+                        <div class="all_colors_style"
+                          style="background-image: linear-gradient(45deg, #011627 0%, #02223c 100%);"></div>
+                        <div class="all_colors_style"
+                          style="background-image: linear-gradient(45deg, #38b000 0%, #011627 100%);"></div>
+                        <div class="all_colors_style"
+                          style="background-image: linear-gradient(45deg, #38b000 0%, #38b000 100%);"></div>
+                        <div class="all_colors_style"
+                          style="background-image: linear-gradient(45deg, #a8ff78 0%, #78ffd6 100%);"></div>
+                        <div class="all_colors_style"
+                          style="background-image: linear-gradient(45deg, #333333 0%, #dd1818 100%);"></div>
+                        <div class="all_colors_style"
+                          style="background-image: linear-gradient(45deg, #0f0c29 0%, #302b63 100%);"></div>
+                        <div class="all_colors_style"
+                          style="background-image: linear-gradient(45deg, #ed4263 0%, #ffedbc 100%);"></div>
+                      </div>
+                      <div class="btn-close-color bg-white">
+                        <button type="button" class="btn-close" aria-label="Close" onclick="hideColor()"></button>
+                      </div>
+                    </div>
+                  </div>
+
                 </div>
                 <div class="p-2 user-publisher-select-box d-flex align-items-center justify-content-between">
-                  <div><select id="recentFilings" name="recentFilings" class="me-2 form-select mb-2 bg-white"
+                  <div><select id="recentFilings" name="recentFilings" class="form-select bg-white border"
                       aria-label="Default select">
                       <option selected>Everyone</option>
                       <option value="1"> Only me</option>
@@ -144,7 +381,7 @@
 
             </form>
             <div class="feed-posts">
-              <ul class="nav nav-tabs inner-tabs-btn my-3 shadow-sm rounded" id="course-content-tab" role="tablist">
+              <ul class="nav nav-tabs inner-tabs-btn my-3 shadow rounded" id="course-content-tab" role="tablist">
                 <li class="nav-item col" role="presentation">
                   <button class="nav-link border-end-0 border-top-0 border-start-0 border-bottom fs-5 text-black active"
                     id="about-tab" data-bs-toggle="tab" data-bs-target="#about-tab-pane" type="button" role="tab"
@@ -188,7 +425,7 @@
                 <div class="tab-pane fade show active" id="about-tab-pane" role="tabpanel" aria-labelledby="about-tab"
                   tabindex="0">
                   <div id="posts my-4">
-                    <div class="post shadow-radius mb-4" id="">
+                    <div class="post shadow mb-4 rounded-2" id="">
                       <div class="post-wrapper">
                         <div class="post-heading p-3">
                           <div class="d-flex justify-content-between">
@@ -239,7 +476,129 @@
                               <span class="py-2 d-block cursor-pointer"><i class="bi bi-chat pe-2"></i>Comment</span>
                             </div>
                             <div class="col-4 text-center">
-                              <span class="py-2 d-block cursor-pointer"><i class="bi bi-share pe-2"></i>Share</span>
+                              <!-- share Button trigger modal -->
+                              <span class="py-2 d-block cursor-pointer" type="button" data-bs-toggle="modal"
+                                data-bs-target="#shareModal"><i class="bi bi-share pe-2"></i>Share</span>
+
+
+                              <!-- share Modal -->
+                              <div class="modal fade" id="shareModal" tabindex="-1" aria-labelledby="shareModalLabel"
+                                aria-hidden="true">
+                                <div class="modal-dialog share-popup-dialog modal-dialog-centered">
+                                  <div class="modal-content">
+                                    <div class="modal-header share-popup-header text-center">
+                                      <h1 class="modal-title fs-5 text-white justify-content-center"
+                                        id="shareModalLabel"><i class="bi bi-share pe-2"></i>Share The Post On
+                                      </h1>
+                                      <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal"
+                                        aria-label="Close"></button>
+                                    </div>
+                                    <div class="modal-body">
+                                      <div
+                                        class="d-flex justify-content-around gap-5 flex-wrap border-bottom pb-3 pt-2">
+                                        <a href="" class="text-center text-black">
+                                          <div
+                                            class="bg-smoke share-social-icons rounded-circle d-flex justify-content-center m-auto">
+                                            <i class="bi bi-twitter-x align-self-center fs-4"></i>
+                                          </div>
+                                          <div>Twitter</div>
+                                        </a>
+                                        <a href="" class="text-center text-black">
+                                          <div
+                                            class="bg-smoke share-social-icons rounded-circle d-flex justify-content-center m-auto">
+                                            <i class="bi bi-facebook align-self-center fs-4"></i>
+                                          </div>
+                                          <div>Facebook</div>
+                                        </a>
+                                        <a href="" class="text-center text-black">
+                                          <div
+                                            class="bg-smoke share-social-icons rounded-circle d-flex justify-content-center m-auto">
+                                            <i class="bi bi-whatsapp align-self-center fs-4"></i>
+                                          </div>
+                                          <div>Whatsapp</div>
+                                        </a>
+                                        <a href="" class="text-center text-black">
+                                          <div
+                                            class="bg-smoke share-social-icons rounded-circle d-flex justify-content-center m-auto">
+                                            <i class="bi bi-pinterest align-self-center fs-4"></i>
+                                          </div>
+                                          <div>Pinterest</div>
+                                        </a>
+                                        <a href="" class="text-center text-black">
+                                          <div
+                                            class="bg-smoke share-social-icons rounded-circle d-flex justify-content-center m-auto">
+                                            <i class="bi bi-linkedin align-self-center fs-4"></i>
+                                          </div>
+                                          <div>Linkedin</div>
+                                        </a>
+                                        <a href="" class="text-center text-black">
+                                          <div
+                                            class="bg-smoke share-social-icons rounded-circle d-flex justify-content-center m-auto">
+                                            <i class="bi bi-telegram align-self-center fs-4"></i>
+                                          </div>
+                                          <div>Telegram</div>
+                                        </a>
+                                      </div>
+                                      <div class="my-3">
+                                        <textarea class="form-control p-2 rounded-0 share-popup-textarea"
+                                          placeholder="What's going on? #Hashtag.. @Mention.. Link.."
+                                          rows="4"></textarea>
+                                      </div>
+                                      <div>
+                                        <h4 class="fs-5 fw-6 text-start">Share the post on</h4>
+                                        <div class="d-flex justify-content-center">
+                                          <a class="text-black p-3 border border-info rounded-2 d-flex justify-content-center align-items-center fw-5"
+                                            style="width: fit-content;" data-bs-toggle="collapse"
+                                            href="#share-popup-chat" role="button" aria-expanded="false"
+                                            aria-controls="share-popup-chat">
+                                            <span class="bg-smoke rounded-3 align-self-center chat-popup-icon me-2"><i
+                                                class="bi bi-people-fill fs-4" fill="#03A9F4"></i></span> Chat
+                                          </a>
+                                        </div>
+                                        <div class="collapse" id="share-popup-chat">
+                                          <div class="card card-body shadow-none">
+                                            <div class="mb-3">
+                                              <input type="text" class="form-control bg-smoke rounded-5"
+                                                id="exampleFormControlInput1" placeholder="Please write the chat name">
+                                            </div>
+                                          </div>
+                                        </div>
+                                      </div>
+                                      <div class="bg-smoke px-3 py-2 my-3">
+                                        <div class="d-flex justify-content-between align-items-center">
+                                          <div class="d-flex gap-2">
+                                            <img
+                                              src="https://s3.wasabisys.com/rpdapp1/upload/photos/2023/06/oOAjH6QnKWn3guFugJSI_07_c83f8e518f67ef583d3b53936abb7cd8_avatar.jpg?cache=0"
+                                              class="rounded-circle" alt="Rich TV profile picture" width="50px"
+                                              height="50px">
+                                            <div>
+                                              <h5>Rich TV <span><i class="bi bi-patch-check-fill"
+                                                    fill="#55acee"></i></span></h5>
+                                              <div class="text-secondary text-start">3 w</div>
+                                            </div>
+                                          </div>
+                                          <p class="m-0">
+                                            <a data-bs-toggle="collapse" href="#profile-popup-disc" role="button"
+                                              aria-expanded="false" aria-controls="profile-popup-disc">
+                                              <i class="bi bi-arrows-angle-expand fs-4 text-black"></i>
+                                            </a>
+                                          </p>
+                                        </div>
+                                        <div class="collapse" id="profile-popup-disc">
+                                          <div class="card card-body shadow-none bg-transparent text-start">
+                                            SOS up about 9%. Might have another run. worth keeping an eye on it. It
+                                            did have a run to $9 before so it will be interesting to see if it can do
+                                            it again.
+                                          </div>
+                                        </div>
+                                      </div>
+                                    </div>
+                                    <div class="modal-footer">
+                                      <button type="button" class="btn btn-primary">Share</button>
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>
                             </div>
                           </div>
                           <div class="comment-box p-2 px-3 d-flex gap-2 align-items-center">
@@ -807,7 +1166,7 @@
 
         </div>
         <div class="col-lg-4">
-          <div class="wow_content wow_side_loggd_usr bg-white p-3 mb-3">
+          <div class="wow_content wow_side_loggd_usr bg-white p-3 mb-3 shadow">
             <div class="wow_side_loggd_usr_cvr">
               <img class="width-100 height-100 object-fit-cover"
                 src="https://s3.wasabisys.com/rpdapp1/upload/photos/2023/06/7PXzviNVMJTCho6DpY6k_07_6fb286bb37958c93d0070f66161a8a15_cover.jpg?cache=1686159258"
@@ -846,7 +1205,7 @@
               </li>
             </ul>
           </div>
-          <div class="main_section mb-40 border-grey border pb-0">
+          <div class="main_section mb-40 border-grey border pb-0 shadow">
             <div class="heading-summary mb-3 chat-main-common-padding border-bottom border-grey pt-2">
               <h3 class="fs-6 fw-bolder lh-base">LATEST FINANCIAL NEWS</h3>
             </div>
@@ -861,7 +1220,7 @@
                 </div>
                 <div class="stock-post-content">
                   <h4><a href="https://richtv.io/financial-news/initial-jobless-claims-unexpectedly-decline-to-216000/"
-                      aria-label="tittle">Initial jobless claims unexpectedly decl ...</a></h4>
+                      aria-label="tittle">Initial Jobless Claims Unexpectedly Decline To 216,000</a></h4>
                   <a class="stock-author-meta" href="https://richtv.io/author/admin/" aria-label="author_link">Rich
                     TV</a>
                   <span>Sep 7, 2023</span>
@@ -878,7 +1237,8 @@
                 </div>
                 <div class="stock-post-content">
                   <h4><a href="https://richtv.io/financial-news/initial-jobless-claims-unexpectedly-decline-to-216000/"
-                      aria-label="tittle">Initial jobless claims unexpectedly decl ...</a></h4>
+                      aria-label="tittle">Initial Jobless Claims Unexpectedly Decline To 216,000</a>
+                  </h4>
                   <a class="stock-author-meta" href="https://richtv.io/author/admin/" aria-label="author_link">Rich
                     TV</a>
                   <span>Sep 7, 2023</span>
@@ -895,7 +1255,7 @@
                 </div>
                 <div class="stock-post-content">
                   <h4><a href="https://richtv.io/financial-news/initial-jobless-claims-unexpectedly-decline-to-216000/"
-                      aria-label="tittle">Initial jobless claims unexpectedly decl ...</a></h4>
+                      aria-label="tittle">Initial Jobless Claims Unexpectedly Decline To 216,000</a></h4>
                   <a class="stock-author-meta" href="https://richtv.io/author/admin/" aria-label="author_link">Rich
                     TV</a>
                   <span>Sep 7, 2023</span>
@@ -912,7 +1272,7 @@
                 </div>
                 <div class="stock-post-content">
                   <h4><a href="https://richtv.io/financial-news/initial-jobless-claims-unexpectedly-decline-to-216000/"
-                      aria-label="tittle">Initial jobless claims unexpectedly decl ...</a></h4>
+                      aria-label="tittle">Initial Jobless Claims Unexpectedly Decline To 216,000</a></h4>
                   <a class="stock-author-meta" href="https://richtv.io/author/admin/" aria-label="author_link">Rich
                     TV</a>
                   <span>Sep 7, 2023</span>
@@ -929,7 +1289,7 @@
                 </div>
                 <div class="stock-post-content">
                   <h4><a href="https://richtv.io/financial-news/initial-jobless-claims-unexpectedly-decline-to-216000/"
-                      aria-label="tittle">Initial jobless claims unexpectedly decl ...</a></h4>
+                      aria-label="tittle">Initial Jobless Claims Unexpectedly Decline To 216,000</a></h4>
                   <a class="stock-author-meta" href="https://richtv.io/author/admin/" aria-label="author_link">Rich
                     TV</a>
                   <span>Sep 7, 2023</span>
@@ -946,7 +1306,7 @@
                 </div>
                 <div class="stock-post-content">
                   <h4><a href="https://richtv.io/financial-news/initial-jobless-claims-unexpectedly-decline-to-216000/"
-                      aria-label="tittle">Initial jobless claims unexpectedly decl ...</a></h4>
+                      aria-label="tittle">Initial Jobless Claims Unexpectedly Decline To 216,000</a></h4>
                   <a class="stock-author-meta" href="https://richtv.io/author/admin/" aria-label="author_link">Rich
                     TV</a>
                   <span>Sep 7, 2023</span>
@@ -954,13 +1314,14 @@
               </div>
             </div>
             <div class="show-more-btn text-start border-top border-1 border-grey">
-              <a href="#" class="btn btn-primary rounded-2 d-inline-flex align-items-center gap-3"
-                aria-label="Dynamic chat">Stay Informed<span class="fs-4">
+              <a href="https://richtv.io/category/news/financial-news"
+                class="btn btn-primary rounded-2 d-inline-flex align-items-center gap-3" aria-label="Dynamic chat">Stay
+                Informed<span class="fs-4">
                   ›</span></a>
             </div>
           </div>
-          <div class="trendingvideos-widget mt-3 shadow-sm rounded border-top border-2 border-warning">
-            <div class="video-sidebar-tittle border-bottom">
+          <div class="trendingvideos-widget mt-3 shadow rounded border-top border-2 border-warning">
+            <div class=" border-bottom">
               <h2 class="fs-18 fw-6 px-4">Our Latest Video</h2>
             </div>
             <div class="px-4 ltst-video-inner py-3">
@@ -969,15 +1330,16 @@
                 data-bs-target="#side-bar-video">
                 <div class="row border border-1 rounded-top-3">
                   <div
-                    class=" col-3 video-img-box bg-dark py-4 d-flex flex-column align-items-center gap-3   rounded-top-3">
-                    <img src="https://i.ytimg.com/vi/MKdto5IGcXA/default.jpg" class="card-img-top w-50">
-                    <img src="https://s3.wasabisys.com/rpdapp1/upload/photos/2023/img/edu-pdf-icons/play_icon.png"
-                      class="play-btn w-50">
+                    class="col-3 video-img-box bg-dark py-4 d-flex flex-column align-items-center gap-3 rounded-top-3">
+                    <div class="position-relative">
+                      <img src="https://i.ytimg.com/vi/MKdto5IGcXA/default.jpg" class="card-img-top w-100">
+                      <img src="https://dev1.richtv.io/build/images/play-icon.png"
+                        class="play-btn w-50 position-absolute">
+                    </div>
                   </div>
                   <div class="col-9 video-card-body ps-2 pe-0">
-                    <p class=" py-2 text-center">Sam Bankman-Fried found guilty on all seven counts of fraud,
-                      embezzlement, and
-                      criminal conspiracy<br>
+                    <p class="p-2 text-start">Sam Bankman-Fried found guilty on all seven counts of
+                      fraud,
                       Nov 02 2023 </p>
                   </div>
                 </div>
@@ -1003,7 +1365,7 @@
               </div>
             </div>
           </div>
-          <div class="people-you-know mt-3 shadow-sm rounded border-top border-2 border-warning">
+          <div class="people-you-know mt-3 shadow rounded border-top border-2 border-warning">
             <div class="video-sidebar-tittle border-bottom">
 
               <div class="d-flex align-items-center py-1 justify-content-between">
@@ -1013,104 +1375,56 @@
                 <div class="reload-widget pe-3"><i class="bi bi-arrow-clockwise" style="font-size: 22px;"></i></div>
               </div>
             </div>
-            <div class="row  p-3">
-              <div class="col">
-                <div class="p-1 user-feed-card bg-white border border-1 text-center rounded-2">
-                  <div class="avatar user-chat-avatar-feed text-center">
+            <div class="row gy-3 px-4 py-3">
+              <div class="col-12 bg-white border border-1 rounded-2 py-3">
+                <div class="p-3  user-feed-card d-flex align-items-center justify-content-between">
+                  <div class="avatar user-chat-avatar-feed d-flex align-items-center">
                     <img src="https://s3.wasabisys.com/rpdapp1/upload/photos/d-avatar.jpg?cache=0"
-                      alt="Water Ways Technologies Inc Profile Picture" class="rounded-circle">
+                      alt="Water Ways Technologies Inc Profile Picture" class="rounded-circle me-3" width="50px"
+                      height="50px">
+                    <a href="#" class="user_wrapper_link fs-18 fw-5 text-black">Romman Ch</a>
                   </div>
-                  <a href="#"><span class="user_wrapper_link fs-16 fw-4 pt-3 text-dark d-inline-block">rommanch</span>
-                  </a>
-                  <div class="user-lastseen pt-1 text-light-emphasis fs-14 text-center">7<span class="ps-1">W</span>
-                  </div>
-                  <div class="user_follow-button pt-2">
-                    <button class="btn  fs-14 btn-primary rounded-pill" type="button">Add Friends</button>
+                  <div class="user_follow-button">
+                    <button class="btn btn-primary fs-14" type="button">Add</button>
                   </div>
                 </div>
-              </div>
-              <div class="col">
-                <div class="p-1 user-feed-card bg-white border border-1 text-center rounded-2">
-                  <div class="avatar user-chat-avatar-feed text-center">
+                <div class="p-3  user-feed-card d-flex align-items-center justify-content-between">
+                  <div class="avatar user-chat-avatar-feed d-flex align-items-center">
                     <img src="https://s3.wasabisys.com/rpdapp1/upload/photos/d-avatar.jpg?cache=0"
-                      alt="Water Ways Technologies Inc Profile Picture" class="rounded-circle">
+                      alt="Water Ways Technologies Inc Profile Picture" class="rounded-circle me-3" width="50px"
+                      height="50px">
+                    <a href="#" class="user_wrapper_link fs-18 fw-5 text-black">Romman Ch</a>
                   </div>
-                  <a href="#"><span class="user_wrapper_link fs-16 fw-4 pt-3 text-dark d-inline-block">rommanch</span>
-                  </a>
-                  <div class="user-lastseen pt-1 text-light-emphasis fs-14 text-center">7<span class="ps-1">W</span>
-                  </div>
-                  <div class="user_follow-button pt-2">
-                    <button class="btn  fs-14 btn-primary rounded-pill" type="button">Add Friends</button>
+                  <div class="user_follow-button">
+                    <button class="btn btn-primary fs-14" type="button">Add</button>
                   </div>
                 </div>
-              </div>
-            </div>
-            <div class="row  p-3">
-              <div class="col">
-                <div class="p-1 user-feed-card bg-white border border-1 text-center rounded-2">
-                  <div class="avatar user-chat-avatar-feed text-center">
+                <div class="p-3  user-feed-card d-flex align-items-center justify-content-between">
+                  <div class="avatar user-chat-avatar-feed d-flex align-items-center">
                     <img src="https://s3.wasabisys.com/rpdapp1/upload/photos/d-avatar.jpg?cache=0"
-                      alt="Water Ways Technologies Inc Profile Picture" class="rounded-circle">
+                      alt="Water Ways Technologies Inc Profile Picture" class="rounded-circle me-3" width="50px"
+                      height="50px">
+                    <a href="#" class="user_wrapper_link fs-18 fw-5 text-black">Romman Ch</a>
                   </div>
-                  <a href="#"><span class="user_wrapper_link fs-16 fw-4 pt-3 text-dark d-inline-block">rommanch</span>
-                  </a>
-                  <div class="user-lastseen pt-1 text-light-emphasis fs-14 text-center">7<span class="ps-1">W</span>
-                  </div>
-                  <div class="user_follow-button pt-2">
-                    <button class="btn  fs-14 btn-primary rounded-pill" type="button">Add Friends</button>
+                  <div class="user_follow-button">
+                    <button class="btn btn-primary fs-14" type="button">Add</button>
                   </div>
                 </div>
-              </div>
-              <div class="col">
-                <div class="p-1 user-feed-card bg-white border border-1 text-center rounded-2">
-                  <div class="avatar user-chat-avatar-feed text-center">
+                <div class="p-3  user-feed-card d-flex align-items-center justify-content-between">
+                  <div class="avatar user-chat-avatar-feed d-flex align-items-center">
                     <img src="https://s3.wasabisys.com/rpdapp1/upload/photos/d-avatar.jpg?cache=0"
-                      alt="Water Ways Technologies Inc Profile Picture" class="rounded-circle">
+                      alt="Water Ways Technologies Inc Profile Picture" class="rounded-circle me-3" width="50px"
+                      height="50px">
+                    <a href="#" class="user_wrapper_link fs-18 fw-5 text-black">Romman Ch</a>
                   </div>
-                  <a href="#"><span class="user_wrapper_link fs-16 fw-4 pt-3 text-dark d-inline-block">rommanch</span>
-                  </a>
-                  <div class="user-lastseen pt-1 text-light-emphasis fs-14 text-center">7<span class="ps-1">W</span>
-                  </div>
-                  <div class="user_follow-button pt-2">
-                    <button class="btn  fs-14 btn-primary rounded-pill" type="button">Add Friends</button>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="row  p-3">
-              <div class="col">
-                <div class="p-1 user-feed-card bg-white border border-1 text-center rounded-2">
-                  <div class="avatar user-chat-avatar-feed text-center">
-                    <img src="https://s3.wasabisys.com/rpdapp1/upload/photos/d-avatar.jpg?cache=0"
-                      alt="Water Ways Technologies Inc Profile Picture" class="rounded-circle">
-                  </div>
-                  <a href="#"><span class="user_wrapper_link fs-16 fw-4 pt-3 text-dark d-inline-block">rommanch</span>
-                  </a>
-                  <div class="user-lastseen pt-1 text-light-emphasis fs-14 text-center">7<span class="ps-1">W</span>
-                  </div>
-                  <div class="user_follow-button pt-2">
-                    <button class="btn  fs-14 btn-primary rounded-pill" type="button">Add Friends</button>
-                  </div>
-                </div>
-              </div>
-              <div class="col">
-                <div class="p-1 user-feed-card bg-white border border-1 text-center rounded-2">
-                  <div class="avatar user-chat-avatar-feed text-center">
-                    <img src="https://s3.wasabisys.com/rpdapp1/upload/photos/d-avatar.jpg?cache=0"
-                      alt="Water Ways Technologies Inc Profile Picture" class="rounded-circle">
-                  </div>
-                  <a href="#"><span class="user_wrapper_link fs-16 fw-4 pt-3 text-dark d-inline-block">rommanch</span>
-                  </a>
-                  <div class="user-lastseen pt-1 text-light-emphasis fs-14 text-center">7<span class="ps-1">W</span>
-                  </div>
-                  <div class="user_follow-button pt-2">
-                    <button class="btn  fs-14 btn-primary rounded-pill" type="button">Add Friends</button>
+                  <div class="user_follow-button">
+                    <button class="btn btn-primary fs-14" type="button">Add</button>
                   </div>
                 </div>
               </div>
             </div>
           </div>
-          <div class="people-you-know mt-3 shadow-sm rounded border-top border-2 border-warning mb-2">
+          <div class="people-you-know mt-3 shadow rounded border-top border-2 border-warning mb-2">
             <div class="video-sidebar-tittle border-bottom">
               <div class="d-flex align-items-center py-1 justify-content-between">
                 <div>
@@ -1119,75 +1433,58 @@
                 <div class="reload-widget pe-3"><i class="bi bi-arrow-clockwise" style="font-size: 22px;"></i></div>
               </div>
             </div>
-            <div class="row  px-3 py-1">
-              <div class="col">
-                <div class="p-1 user-feed-card bg-white border border-1 text-center rounded-2">
-                  <div class="avatar user-chat-avatar-feed text-center">
+            <div class="row gy-3 px-4 py-3">
+              <div class="col-12 bg-white border border-1 rounded-2 py-3">
+                <div class="p-3  user-feed-card d-flex align-items-center justify-content-between">
+                  <div class="avatar user-chat-avatar-feed d-flex align-items-center">
                     <img src="https://s3.wasabisys.com/rpdapp1/upload/photos/d-avatar.jpg?cache=0"
-                      alt="Water Ways Technologies Inc Profile Picture" class="rounded-circle">
+                      alt="Water Ways Technologies Inc Profile Picture" class="rounded-circle me-3" width="50px"
+                      height="50px">
+                    <a href="#" class="user_wrapper_link fs-18 fw-5 text-black">Romman Ch</a>
                   </div>
-                  <a href="#"><span class="user_wrapper_link fs-16 fw-4 pt-3 text-dark d-inline-block">rommanch</span>
-                  </a>
-                  <div class="user-lastseen pt-1 text-light-emphasis fs-14 text-center">7<span class="ps-1">W</span>
-                  </div>
-                  <div class="user_follow-button pt-2">
-                    <button class="btn fs-14 btn-primary rounded-2" type="button"><i
+                  <div class="user_follow-button">
+                    <button class="btn btn-primary fs-14" type="button"><i
                         class="bi bi-plus-circle text-white pe-2"></i>Join</button>
                   </div>
                 </div>
-              </div>
-              <div class="col">
-                <div class="p-1 user-feed-card bg-white border border-1 text-center rounded-2">
-                  <div class="avatar user-chat-avatar-feed text-center">
+                <div class="p-3  user-feed-card d-flex align-items-center justify-content-between">
+                  <div class="avatar user-chat-avatar-feed d-flex align-items-center">
                     <img src="https://s3.wasabisys.com/rpdapp1/upload/photos/d-avatar.jpg?cache=0"
-                      alt="Water Ways Technologies Inc Profile Picture" class="rounded-circle">
+                      alt="Water Ways Technologies Inc Profile Picture" class="rounded-circle me-3" width="50px"
+                      height="50px">
+                    <a href="#" class="user_wrapper_link fs-18 fw-5 text-black">Romman Ch</a>
                   </div>
-                  <a href="#"><span class="user_wrapper_link fs-16 fw-4 pt-3 text-dark d-inline-block">rommanch</span>
-                  </a>
-                  <div class="user-lastseen pt-1 text-light-emphasis fs-14 text-center">7<span class="ps-1">W</span>
-                  </div>
-                  <div class="user_follow-button pt-2">
-                    <button class="btn fs-14 btn-primary rounded-2" type="button"><i
+                  <div class="user_follow-button">
+                    <button class="btn btn-primary fs-14" type="button"><i
                         class="bi bi-plus-circle text-white pe-2"></i>Join</button>
                   </div>
                 </div>
-              </div>
-            </div>
-            <div class="row  px-3 py-1">
-              <div class="col">
-                <div class="p-1 user-feed-card bg-white border border-1 text-center rounded-2">
-                  <div class="avatar user-chat-avatar-feed text-center">
+                <div class="p-3  user-feed-card d-flex align-items-center justify-content-between">
+                  <div class="avatar user-chat-avatar-feed d-flex align-items-center">
                     <img src="https://s3.wasabisys.com/rpdapp1/upload/photos/d-avatar.jpg?cache=0"
-                      alt="Water Ways Technologies Inc Profile Picture" class="rounded-circle">
+                      alt="Water Ways Technologies Inc Profile Picture" class="rounded-circle me-3" width="50px"
+                      height="50px">
+                    <a href="#" class="user_wrapper_link fs-18 fw-5 text-black">Romman Ch</a>
                   </div>
-                  <a href="#"><span class="user_wrapper_link fs-16 fw-4 pt-3 text-dark d-inline-block">rommanch</span>
-                  </a>
-                  <div class="user-lastseen pt-1 text-light-emphasis fs-14 text-center">7<span class="ps-1">W</span>
-                  </div>
-                  <div class="user_follow-button pt-2">
-                    <button class="btn fs-14 btn-primary rounded-2" type="button"><i
+                  <div class="user_follow-button">
+                    <button class="btn btn-primary fs-14" type="button"><i
                         class="bi bi-plus-circle text-white pe-2"></i>Join</button>
                   </div>
                 </div>
-              </div>
-              <div class="col">
-                <div class="p-1 user-feed-card bg-white border border-1 text-center rounded-2">
-                  <div class="avatar user-chat-avatar-feed text-center">
+                <div class="p-3  user-feed-card d-flex align-items-center justify-content-between">
+                  <div class="avatar user-chat-avatar-feed d-flex align-items-center">
                     <img src="https://s3.wasabisys.com/rpdapp1/upload/photos/d-avatar.jpg?cache=0"
-                      alt="Water Ways Technologies Inc Profile Picture" class="rounded-circle">
+                      alt="Water Ways Technologies Inc Profile Picture" class="rounded-circle me-3" width="50px"
+                      height="50px">
+                    <a href="#" class="user_wrapper_link fs-18 fw-5 text-black">Romman Ch</a>
                   </div>
-                  <a href="#"><span class="user_wrapper_link fs-16 fw-4 pt-3 text-dark d-inline-block">rommanch</span>
-                  </a>
-                  <div class="user-lastseen pt-1 text-light-emphasis fs-14 text-center">7<span class="ps-1">W</span>
-                  </div>
-                  <div class="user_follow-button pt-2">
-                    <button class="btn fs-14 btn-primary rounded-2" type="button"><i
+                  <div class="user_follow-button">
+                    <button class="btn btn-primary fs-14" type="button"><i
                         class="bi bi-plus-circle text-white pe-2"></i>Join</button>
                   </div>
                 </div>
               </div>
             </div>
-
           </div>
           <div class="border-primary pt-4 pb-2 px-3 border my-3 rounded-1" style="background-color: #ffb8001a">
             <h1 class="fw-6 fs-5 text-secondary"><img
@@ -1227,11 +1524,143 @@
       </div>
     </div>
   </section>
+   <!-- footer html start  -->
+   <footer class="main-foot text-white">
+    <section class="main-footer container-fluid">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-4 col-md-6 ">
+            <div class="footer-logo">
+              <img src="https://s3.wasabisys.com/rpdapp1/upload/photos/2023/img/logo.png" alt="Footer logo">
+            </div>
+            <div class="footer-para">
+              <p class="mt-3">
+                Trading data in widgets
+                displayed with a 15-minute
+                delay. Prices available on stock
+                page updated in real time.
+                Market &amp; fundamental data
+                appearing on Rich Tv
+                sourced from various 3rd party
+                data providers.
+              </p>
+            </div>
+          </div>
+          <div class="col-6 col-lg-2 col-md-6 mt-mobile">
+            <div class="footer-heading">
+              <h2 class="mb-3">Rich Tv</h2>
+            </div>
+            <div class="footer-links">
+              <div class="menu-footer-navigation-one-container">
+                <ul id="menu-footer-navigation-one" class="menu  list-unstyled">
+                  <li class="pb-3"><a href="about-us/" aria-label="about us">About Us</a></li>
+                  <li class="pb-3"><a href="pricing">Pricing and Plans </a></li>
+                  <li class="pb-3"><a href="affiliate-center" aria-label="Affiliate program">Affiliate Program</a></li>
+                  <li class="pb-3"><a href="contact" aria-label="contact us">Contact us</a></li>
+                  <li class="pb-3"><a href="register" aria-label="Join club">Join the Club</a></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div class="col-6 col-lg-2 col-md-6 mt-mobile">
+            <div class="footer-heading">
+              <h2 class="mb-3"> Learning</h2>
+            </div>
+            <div class="footer-links">
+              <div class="menu-footer-navigation-two-container">
+                <ul id="menu-footer-navigation-two" class="menu list-unstyled">
+                  <li class="pb-3"><a href="rich-picks/" aria-label="Rich picks">Rich Picks</a></li>
+                  <li class="pb-3"><a href="penny-stocks/" aria-label="penny stock">Penny Stocks</a></li>
+                  <li class="pb-3"><a href="news/" aria-label="News">News</a></li>
+                  <li class="pb-3"><a href="ceo-interviews/" aria-label="Ceo">CEO Interviews</a></li>
+                  <li class="pb-3"><a href="trading-school/" aria-label="trading school">Trading School</a></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-6 mt-mobile">
+            <div class="footer-contact-us footer-heading">
+              <h2 class="mb-3">Get Latest Stock Pick Alerts</h2>
+            </div>
+            <div class="footer-searchbar mb-3 position-relative">
+              <form id="f_contactform" method="post" action="" class="footeremlcollector">
+                <input type="email" placeholder="Enter your email" class="footer-serch" name="f_email" id="f_email"
+                  fdprocessedid="31it58">
+                <input type="text" id="hiddenspm-footer1" class="mauticform-input" style="display:none;">
+                <button class="position-absolute btn-primary" type="submit" id="sub_footer"
+                  aria-label="Newsletter Button" fdprocessedid="d97vyg">
+                  <div class=" d-inline-block">
+                    <i class="bi bi-arrow-right fw-6"></i>
+                  </div>
+                </button>
+              </form>
+              <div class="err" id="err-f_email" style="display: none;"></div>
+              <div class="formsubmission" id="f_formsubmission">
+                <p class="formsubmission-text"></p>
+              </div>
+            </div>
+            <div class="email mb-2">
+              <a href="mailto:support@richtv.io" class="d-flex gap-3 align-items-center" aria-label="email"
+                target="_blank" rel="nofollow">
+                <div class="d-inline-block fs-18"> <i class="bi bi-envelope"></i></div>
+                support@richtv.io
+              </a>
+            </div>
+            <div class="footer-num email mb-4">
+              <a href="tel:778-237-2402" target="_blank" class="d-flex gap-3 align-items-center" aria-label="Phone"
+                rel="nofollow">
+                <div class="d-inline-block fs-18"><i class="bi bi-telephone"></i></div>
+                778-237-2402
+              </a>
+            </div>
+            <div class="footer-icons d-flex gap-4">
+              <a href="https://www.facebook.com/richtv.io" class="fs-18" target="_blank" aria-label="Facebook"
+                rel="nofollow">
+                <i class="bi bi-facebook"></i>
+              </a>
+              <a href="https://www.youtube.com/c/RICHTVLIVE" class="fs-18" target="_blank" aria-label="Youtube"
+                rel="nofollow">
+                <i class="bi bi-youtube"></i>
+              </a>
+              <a href="https://www.instagram.com/richtv.io/" class="fs-18" target="_blank" aria-label="Instagram"
+                rel="nofollow">
+                <i class="bi bi-instagram"></i>
+              </a>
+              <a href="https://twitter.com/richtv_io" class="fs-18" target="_blank" aria-label="Twitter" rel="nofollow">
+                <i class="bi bi-twitter"></i>
+              </a>
+              <a href="https://linkedin.com/company/richtv-io" class="fs-18" target="_blank" aria-label="Linkdin"
+                rel="nofollow">
+                <i class="bi bi-linkedin"></i>
+              </a>
+              <a href="https://www.tiktok.com/@richtv.io" target="_blank" class="fs-18" aria-label="Tiktok"
+                rel="nofollow">
+                <i class="bi bi-tiktok"></i>
+              </a>
+            </div>
+          </div>
+          <div class="col-12 footer-bootem d-flex py-4 mt-5 border-top ">
+            <p class="mb-0 ">Copyright © 2023 Rich Tv. All rights reserved</p>
+            <div class="">
+              <a href="privacy-policy" class="policy-page px-2 mx-2 border-end border-start"
+                aria-label="Privacy Policy">Privacy Policy</a><a href="terms-of-use" aria-label="Terms">Terms
+                of Use</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </footer>
+  <!-- footer html end  -->
+
+  <!-- JS Files -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.1/gsap.min.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
     integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
     crossorigin="anonymous"></script>
   <script src="https://code.jquery.com/jquery-3.6.0.min.js"
     integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+  <script src="./assets/js/slick.min.js"></script>
   <script src="./assets/js/custom.js"></script>
 </body>
 
